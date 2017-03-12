@@ -2,6 +2,7 @@ object HelloWorld {
   def main(args: Array[String]): Unit = {
     var a = "abcde".take(2)
     println(exec(time()))
+    default_value()
   }
 
   def time(): Long = {
@@ -15,6 +16,10 @@ object HelloWorld {
       println("Calling t again ...")
       println("2t = " + t)
       t
+  }
+
+  def default_value(value: Int = 1) = {
+    println(value)
   }
 
 }
