@@ -1,2 +1,3 @@
 /bin/
 src/main/resources/*
+target/scala-2.11/classes/wikipedia/wikipedia.dat
