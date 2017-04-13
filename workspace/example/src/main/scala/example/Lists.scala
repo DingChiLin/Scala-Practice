@@ -5,6 +5,7 @@ import org.apache.spark.SparkContext
 import org.apache.spark.SparkContext._
 
 import org.apache.spark.rdd.RDD
+import org.scalameter._
 
 object Lists {
 
@@ -13,14 +14,29 @@ object Lists {
     val conf: SparkConf = new SparkConf().setMaster("local[4]").setAppName("RddTest")
     val sc: SparkContext = new SparkContext(conf)   
 
-    val list1 = List((1, "a"), (1, "z"), (2, "b"), (3, "c"))
-    val rdd1 = sc.parallelize(list1)
-
-    val list2 = List((1, 33), (1, 77), (3, 88))
-    val rdd2 = sc.parallelize(list2)
+//    val list1 = List((1, "a"), (1, "z"), (2, "b"), (3, "c"))
+//    val rdd1 = sc.parallelize(list1)
+//
+//    val list2 = List((1, 33), (1, 77), (3, 88))
+//    val rdd2 = sc.parallelize(list2)
+//    
+//    val rdd = rdd1.join(rdd2)
+//    println(rdd2.collectAsMap)
     
-    val rdd = rdd1.join(rdd2)
-    println(rdd.collect().toList)
+//    val longArr = sc.parallelize((1 to 1000000))
+//    val time = config() withWarmer{new Warmer.Default} measure {
+//        val result = longArr.map(x => x*2).collect.toList
+//        //println(result) 
+//    }
+//    println(time)
+    
+    val arr = Array(6,7,8,9,10)
+    val scArr = sc.parallelize((0 to 4))
+    scArr.foreach{
+      x => arr(x) = x; println(x)
+    }
+    println(arr.toList)
+    
 
   }
   
