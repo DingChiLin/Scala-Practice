@@ -14,7 +14,7 @@ case class Posting(postingType: Int, id: Int, acceptedAnswer: Option[Int], paren
 /** The main class */
 object StackOverflow extends StackOverflow {
 
-  @transient lazy val conf: SparkConf = new SparkConf().setMaster("local").setAppName("StackOverflow")
+  @transient lazy val conf: SparkConf = new SparkConf().setMaster("local[2]").setAppName("StackOverflow")
   @transient lazy val sc: SparkContext = new SparkContext(conf)
 
   /** Main function */
@@ -27,9 +27,13 @@ object StackOverflow extends StackOverflow {
     val vectors = vectorPostings(scored)
     //assert(vectors.count() == 2121822, "Incorrect number of vectors: " + vectors.count())
     
+    val t0 = System.nanoTime()
     val means   = kmeans(sampleVectors(vectors), vectors, debug = true)
     val results = clusterResults(means, vectors)
+    val t1 = System.nanoTime()
+
     printResults(results)
+    println("Elapsed time: " + (t1 - t0)/1000000000 + "s")
   }
 }
 
@@ -174,9 +178,18 @@ class StackOverflow extends Serializable {
   /** Main kmeans computation */
   @tailrec final def kmeans(means: Array[(Int, Int)], vectors: RDD[(Int, Int)], iter: Int = 1, debug: Boolean = false): Array[(Int, Int)] = {
     val newMeans = means.clone() // you need to compute newMeans
-    val meanOfPoints = vectors.map(x => (findClosest(x, means), x))
-    val groupOfPoins = meanOfPoints.groupByKey
-    val newMeanOfPoints = groupOfPoins.mapValues(averageVectors).collect
+    
+    /* Use groupByKey and averageVectors to compute new mean */
+//    val meanOfPoints = vectors.map(x => (findClosest(x, means), ((x._1, x._2)))) 
+//    val groupOfPoints = meanOfPoints.groupByKey
+//    val newMeanOfPoints = groupOfPoints.mapValues(averageVectors).collect
+    
+    /* Use reduceByKey instead of groupByKey to improve efficiency */
+    val meanOfPoints = vectors.map(x => (findClosest(x, means), ((x._1.toLong, x._2.toLong), 1))) // toLong for add & 1 for count in reduce operation
+    val reduceOfPoints = meanOfPoints.reduceByKey((x,y) => ((x._1._1 + y._1._1, x._1._2 + y._1._2), x._2 + y._2))
+    val newMeanOfPoints = reduceOfPoints.mapValues{ case ((x, y), count) => ((x/count).toInt, (y/count).toInt)}.collect
+    
+    
     newMeanOfPoints.foreach(p =>
       newMeans(p._1) = p._2
     )
