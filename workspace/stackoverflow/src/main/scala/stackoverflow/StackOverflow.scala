@@ -6,6 +6,7 @@ import org.apache.spark.SparkContext._
 import org.apache.spark.rdd.RDD
 import annotation.tailrec
 import scala.reflect.ClassTag
+import org.apache.spark.RangePartitioner
 
 /** A raw stackoverflow posting, either a question or an answer */
 case class Posting(postingType: Int, id: Int, acceptedAnswer: Option[Int], parentId: Option[Int], score: Int, tags: Option[String]) extends Serializable
@@ -58,7 +59,7 @@ class StackOverflow extends Serializable {
   def kmeansEta: Double = 20.0D
 
   /** K-means parameter: Maximum iterations */
-  def kmeansMaxIterations = 120
+  def kmeansMaxIterations = 1
 
 
   //
@@ -186,10 +187,14 @@ class StackOverflow extends Serializable {
     
     /* Use reduceByKey instead of groupByKey to improve efficiency */
     val meanOfPoints = vectors.map(x => (findClosest(x, means), ((x._1.toLong, x._2.toLong), 1))) // toLong for add & 1 for count in reduce operation
+    println(meanOfPoints.dependencies)
+//    val tunedPartitioner = new RangePartitioner(6, meanOfPoints)
+//    val partitioned = meanOfPoints.partitionBy(tunedPartitioner).cache
     val reduceOfPoints = meanOfPoints.reduceByKey((x,y) => ((x._1._1 + y._1._1, x._1._2 + y._1._2), x._2 + y._2))
+    println(reduceOfPoints.dependencies)
     val newMeanOfPoints = reduceOfPoints.mapValues{ case ((x, y), count) => ((x/count).toInt, (y/count).toInt)}.collect
     
-    
+     
     newMeanOfPoints.foreach(p =>
       newMeans(p._1) = p._2
     )
