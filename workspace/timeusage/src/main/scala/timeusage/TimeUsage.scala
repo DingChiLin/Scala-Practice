@@ -44,23 +44,14 @@ object TimeUsage {
         summaryRdd.groupBy(x => (x.age))
                   .mapValues(x => x.map(z => (z.primaryNeeds, 1.0)).reduce((sum, x) => (sum._1 + x._1, sum._2 + x._2))) // 2316
                   .mapValues{ case (need, count) => (need/count) }.collect)
-    
-    timed("DataFrame Group Count", summaryDf.groupBy($"age").agg(avg("primaryNeeds").as("primaryNeeds")).collect) // 757
-//        summaryDf.groupBy("working", "sex", "age")
-//                 .agg(avg("primaryNeeds").as("primaryNeeds"), 
-//                      avg("work").as("work"), 
-//                      avg("other").as("other")).collect())  
-    
+    timed("DataFrame Group Count", summaryDf.groupBy($"age").agg(avg("primaryNeeds").as("primaryNeeds")).collect) // 757 
     timed("DataSet Group Count", summaryDs.groupByKey(_.age).agg(typed.avg(_.primaryNeeds)).collect) // 1021
     timed("DataSet Group (write as DataFrame) Count", summaryDs.groupBy($"age").agg(avg("primaryNeeds").as("primaryNeeds")).collect) // 685
-//        summaryDS.groupByKey(x => (x.working, x.sex, x.age))
-//                  .agg(typed.avg(_.primaryNeeds), 
-//                       typed.avg(_.work),
-//                       typed.avg(_.other)).collect())  
     
     val result = summaryDs.groupByKey(_.age).agg(avg("primaryNeeds").as("primaryNeeds").as[Double]).collect
     
-    
+    val dsAvgTmp = summaryDs.groupByKey(_.age).agg(typed.avg(_.work))
+
     
 //    val rddResult = timeUsageGroupedRDD(summaryRDD)
 //    println(rddResult.collect.toList)
