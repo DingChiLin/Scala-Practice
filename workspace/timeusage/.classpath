@@ -300,6 +300,11 @@
       <attribute name="javadoc_location" value="jar:file:/Users/arthurlin/.coursier/cache/v1/https/repo1.maven.org/maven2/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0-javadoc.jar!/"/>
     </attributes>
   </classpathentry>
+  <classpathentry sourcepath="/Users/arthurlin/.coursier/cache/v1/https/repo1.maven.org/maven2/com/storm-enroute/scalameter-core_2.11/0.6/scalameter-core_2.11-0.6-sources.jar" kind="lib" path="/Users/arthurlin/.coursier/cache/v1/https/repo1.maven.org/maven2/com/storm-enroute/scalameter-core_2.11/0.6/scalameter-core_2.11-0.6.jar">
+    <attributes>
+      <attribute name="javadoc_location" value="jar:file:/Users/arthurlin/.coursier/cache/v1/https/repo1.maven.org/maven2/com/storm-enroute/scalameter-core_2.11/0.6/scalameter-core_2.11-0.6-javadoc.jar!/"/>
+    </attributes>
+  </classpathentry>
   <classpathentry sourcepath="/Users/arthurlin/.coursier/cache/v1/https/repo1.maven.org/maven2/org/scala-lang/scalap/2.11.8/scalap-2.11.8-sources.jar" kind="lib" path="/Users/arthurlin/.coursier/cache/v1/https/repo1.maven.org/maven2/org/scala-lang/scalap/2.11.8/scalap-2.11.8.jar">
     <attributes>
       <attribute name="javadoc_location" value="jar:file:/Users/arthurlin/.coursier/cache/v1/https/repo1.maven.org/maven2/org/scala-lang/scalap/2.11.8/scalap-2.11.8-javadoc.jar!/"/>

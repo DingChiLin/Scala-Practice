@@ -4,6 +4,8 @@ import java.nio.file.Paths
 
 import org.apache.spark.sql._
 import org.apache.spark.sql.types._
+import org.scalameter._
+import org.apache.spark.rdd.RDD
 
 /** Main class */
 object TimeUsage {
@@ -15,7 +17,7 @@ object TimeUsage {
     SparkSession
       .builder()
       .appName("Time Usage")
-      .config("spark.master", "local")
+      .config("spark.master", "local[2]")
       .getOrCreate()
   
   spark.sparkContext.setLogLevel("ERROR")  
@@ -29,42 +31,102 @@ object TimeUsage {
   }
 
   def timeUsageByLifePeriod(): Unit = {
-    val (columns, initDf) = read("/timeusage/atussum.csv")
+    val (columns, initDf) = read("/timeusage/large_atussum.csv")
     val (primaryNeedsColumns, workColumns, otherColumns) = classifiedColumns(columns)
     val summaryDf = timeUsageSummary(primaryNeedsColumns, workColumns, otherColumns, initDf).cache
+    val a = summaryDf.collect // do an action to cache data for benchmark
+    val summaryDs = timeUsageSummaryTyped(summaryDf)
+    val summaryRdd = summaryDs.rdd
+
+    import org.apache.spark.sql.expressions.scalalang.typed
     
+    timed("RDD Group Count", 
+        summaryRdd.groupBy(x => (x.age))
+                  .mapValues(x => x.map(z => (z.primaryNeeds, 1.0)).reduce((sum, x) => (sum._1 + x._1, sum._2 + x._2))) // 2316
+                  .mapValues{ case (need, count) => (need/count) }.collect)
+    
+    timed("DataFrame Group Count", summaryDf.groupBy($"age").agg(avg("primaryNeeds").as("primaryNeeds")).collect) // 757
+//        summaryDf.groupBy("working", "sex", "age")
+//                 .agg(avg("primaryNeeds").as("primaryNeeds"), 
+//                      avg("work").as("work"), 
+//                      avg("other").as("other")).collect())  
+    
+    timed("DataSet Group Count", summaryDs.groupByKey(_.age).agg(typed.avg(_.primaryNeeds)).collect) // 1021
+    timed("DataSet Group (write as DataFrame) Count", summaryDs.groupBy($"age").agg(avg("primaryNeeds").as("primaryNeeds")).collect) // 685
+//        summaryDS.groupByKey(x => (x.working, x.sex, x.age))
+//                  .agg(typed.avg(_.primaryNeeds), 
+//                       typed.avg(_.work),
+//                       typed.avg(_.other)).collect())  
+    
+    val result = summaryDs.groupByKey(_.age).agg(avg("primaryNeeds").as("primaryNeeds").as[Double]).collect
+    
+    
+    
+//    val rddResult = timeUsageGroupedRDD(summaryRDD)
+//    println(rddResult.collect.toList)
+//    timed("RDD Group Aggregate Multiple Column", timeUsageGroupedRDD(summaryRDD).collect())  // 796  =>  4149
+
+//    val dfResult = timeUsageGrouped(summaryDf)
+//    dfResult.show()
+//    timed("DataFrame Group Aggregate Multiple Column", timeUsageGrouped(summaryDf).collect())  // 1075  =>  1297
+//    timed("DataSet Group Aggregate Multiple Column", timeUsageGroupedTyped(summaryDS).collect())  // 1613  =>  2516
+//    timed("DataSet to DataFrame and Group Aggregate Multiple Column", timeUsageGrouped(summaryDS.toDF).collect()) // 1052  =>  1194
+
+
 //    val t0_DF = System.nanoTime()
-//    val finalDf = timeUsageGrouped(summaryDf)
-//    finalDf.show()    
+//    val finalDf = summaryDf.groupBy($"age").count.collect()
+//    finalDf.show() 
 //    val t1_DF = System.nanoTime()
 //    println("Elapsed time DF: " + (t1_DF - t0_DF)/1000000 + "ms")
 
-    val t0_SQL = System.nanoTime()
-    val finalDfsql = timeUsageGroupedSql(summaryDf)
-    finalDfsql.show()
-    val t1_SQL = System.nanoTime()
-    println("Elapsed time SQL: " + (t1_SQL - t0_SQL)/1000000 + "ms")
-
-    val summaryDS = timeUsageSummaryTyped(summaryDf)
-
-    val t0_DS = System.nanoTime()
-    val finalDS = timeUsageGroupedTyped(summaryDS)
-    finalDS.show()
-    val t1_DS = System.nanoTime()
-    println("Elapsed time DS: " + (t1_DS - t0_DS)/1000000 + "ms")
+//    val t0_DF2 = System.nanoTime()
+//    val finalDf2 = summaryDf.groupBy($"age").count.collect()
+//    finalDf2.show()    
+//    val t1_DF2 = System.nanoTime()
+//    println("Elapsed time DF2: " + (t1_DF2 - t0_DF2)/1000000 + "ms")
     
-    
-    val t0_DF_2 = System.nanoTime()
-    val finalDf2 = timeUsageGrouped(summaryDf)
-    finalDf2.show()    
-    val t1_DF_2 = System.nanoTime()
-    println("Elapsed time DF 2: " + (t1_DF_2 - t0_DF_2)/1000000 + "ms")
+//    val t0_SQL = System.nanoTime()
+//    val finalDfsql = timeUsageGroupedSql(summaryDf)
+//    finalDfsql.show()
+//    val t1_SQL = System.nanoTime()
+//    println("Elapsed time SQL: " + (t1_SQL - t0_SQL)/1000000 + "ms")
+//
+//
+//    val t0_DS = System.nanoTime()
+//    val finalDS = summaryDS.groupByKey(_.age).count.collect()
+//    finalDS.show()
+//    val t1_DS = System.nanoTime()
+//    println("Elapsed time DS: " + (t1_DS - t0_DS)/1000000 + "ms")
+//    
+//    
+//    val t0_DF_2 = System.nanoTime()
+//    val finalDf2 = timeUsageGrouped(summaryDf)
+//    finalDf2.show()    
+//    val t1_DF_2 = System.nanoTime()
+//    println("Elapsed time DF 2: " + (t1_DF_2 - t0_DF_2)/1000000 + "ms")
+  }
+  
+  def timed[T](label: String, code: => T) = {
+    println(s"""
+      ######################################################################
+        Timeing: $label
+      ######################################################################
+    """)
+    val time = config(
+      Key.exec.benchRuns -> 10
+    ) withWarmer {
+      new Warmer.Default
+    } measure {
+      code
+    }
+    println(s"Total time: $time")
   }
 
   /** @return The read DataFrame along with its column names. */
   def read(resource: String): (List[String], DataFrame) = {
-    val rdd = spark.sparkContext.textFile(fsPath(resource))
 
+    val rdd = spark.sparkContext.textFile(fsPath(resource))
+//    writeLargeRdd(rdd)
     val headerColumns = rdd.first().split(",").to[List]
     // Compute the schema based on the first line of the CSV file
     val schema = dfSchema(headerColumns)
@@ -81,6 +143,19 @@ object TimeUsage {
     (headerColumns, dataFrame)
   }
 
+  def writeLargeRdd(rdd: RDD[String]) = {
+    var data = rdd
+    
+    val noHeadData =
+      rdd
+        .mapPartitionsWithIndex((i, it) => if (i == 0) it.drop(1) else it) // skip the header line
+        
+    for(i <- (1 to 10)){
+      data = data.union(noHeadData)
+    }    
+    data.saveAsTextFile("large_atussum.csv")
+  }
+   
   /** @return The filesystem path of the given resource */
   def fsPath(resource: String): String =
     Paths.get(getClass.getResource(resource).toURI).toString
@@ -218,12 +293,18 @@ object TimeUsage {
     * Finally, the resulting DataFrame should be sorted by working status, sex and age.
     */
   def timeUsageGrouped(summed: DataFrame): DataFrame = {
+//    summed.groupBy("working", "sex", "age")
+//          .agg(round(avg("primaryNeeds"), 1).as("primaryNeeds"), 
+//               round(avg("work"), 1).as("work"), 
+//               round(avg("other"), 1).as("other"))
+//          .orderBy("working", "sex", "age")
+          
     summed.groupBy("working", "sex", "age")
-          .agg(round(avg("primaryNeeds"), 1).as("primaryNeeds"), 
-               round(avg("work"), 1).as("work"), 
-               round(avg("other"), 1).as("other"))
+          .agg(avg("primaryNeeds").as("primaryNeeds"), 
+               avg("work").as("work"), 
+               avg("other").as("other"))
           .orderBy("working", "sex", "age")
-  }
+          }
 
   /**
     * @return Same as `timeUsageGrouped`, but using a plain SQL query instead
@@ -265,13 +346,27 @@ object TimeUsage {
   def timeUsageGroupedTyped(summed: Dataset[TimeUsageRow]): Dataset[TimeUsageRow] = {
     import org.apache.spark.sql.expressions.scalalang.typed
     
-    summed.groupByKey(x => (x.working, x.sex, x.age))
-          .agg(round(typed.avg[TimeUsageRow](_.primaryNeeds), 1).as[Double], 
-               round(typed.avg[TimeUsageRow](_.work), 1).as[Double],
-               round(typed.avg[TimeUsageRow](_.other), 1).as[Double])
-          .map{ case ((working, sex, age), primaryNeeds, work, other) => TimeUsageRow(working, sex, age, primaryNeeds, work, other) }
-          .orderBy("working", "sex", "age")
-         
+//    summed.groupByKey(x => (x.working, x.sex, x.age))
+//          .agg(round(typed.avg[TimeUsageRow](_.primaryNeeds), 1).as[Double], 
+//               round(typed.avg[TimeUsageRow](_.work), 1).as[Double],
+//               round(typed.avg[TimeUsageRow](_.other), 1).as[Double])
+//          .map{ case ((working, sex, age), primaryNeeds, work, other) => TimeUsageRow(working, sex, age, primaryNeeds, work, other) }
+//          .orderBy("working", "sex", "age")
+          
+     summed.groupByKey(x => (x.working, x.sex, x.age))
+        .agg(typed.avg(_.primaryNeeds), 
+             typed.avg(_.work),
+             typed.avg(_.other))
+        .map{ case ((working, sex, age), primaryNeeds, work, other) => TimeUsageRow(working, sex, age, primaryNeeds.round, work.round, other.round) }
+        .orderBy("working", "sex", "age")
+  }
+  
+  def timeUsageGroupedRDD(summed: RDD[TimeUsageRow]): RDD[TimeUsageRow] = {
+     summed.groupBy(x => (x.working, x.sex, x.age))
+           .mapValues(x => x.map(z => (z.primaryNeeds, z.work, z.other, 1.0)).reduce((sum, x) => (sum._1 + x._1, sum._2 + x._2 , sum._3 + x._3, sum._4 + x._4)))
+           .mapValues{ case (need, work, other, count) => (need/count, work/count, other/count) }
+           .map{ case ((working, sex, age), (primaryNeeds, work, other)) => TimeUsageRow(working, sex, age, primaryNeeds.round, work.round, other.round) }
+           .sortBy(x => (x.working, x.sex, x.age)) 
   }
 
 }
