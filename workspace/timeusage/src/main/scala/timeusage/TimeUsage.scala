@@ -50,8 +50,6 @@ object TimeUsage {
     
     val result = summaryDs.groupByKey(_.age).agg(avg("primaryNeeds").as("primaryNeeds").as[Double]).collect
     
-    val dsAvgTmp = summaryDs.groupByKey(_.age).agg(typed.avg(_.work))
-
     
 //    val rddResult = timeUsageGroupedRDD(summaryRDD)
 //    println(rddResult.collect.toList)
