@@ -27,7 +27,11 @@ object Recursive extends App{
       if(index2 < primes.length - 1 && result <= maximum){
         result::semiPrime(index1, index2 + 1, primes, maximum)
       }else{
-        result::semiPrime(index1 + 1, index1 + 2, primes, maximum)
+        if(result > maximum){
+          semiPrime(index1 + 1, index1 + 2, primes, maximum)
+        }else{
+          result::semiPrime(index1 + 1, index1 + 2, primes, maximum)
+        }
       }
     }
   }
