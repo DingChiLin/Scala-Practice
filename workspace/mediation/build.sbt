@@ -11,5 +11,8 @@ lazy val root = (project in file(".")).
     libraryDependencies += scalaTest % Test,
     libraryDependencies += "org.apache.spark" %% "spark-core" % "2.1.0",
     libraryDependencies += "org.apache.spark" %% "spark-sql" % "2.1.0",
-    libraryDependencies += "com.github.nscala-time" %% "nscala-time" % "2.16.0"
+    libraryDependencies += "com.github.nscala-time" %% "nscala-time" % "2.16.0",
+    libraryDependencies += "com.storm-enroute" %% "scalameter-core" % "0.6",
+    libraryDependencies += "net.liftweb" %% "lift-json" % "2.6"
+
   )
