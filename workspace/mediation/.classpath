@@ -618,6 +618,7 @@
       <attribute name="javadoc_location" value="jar:file:/Users/arthurlin/.ivy2/cache/net.liftweb/lift-json_2.11/docs/lift-json_2.11-2.6-javadoc.jar!/"/>
     </attributes>
   </classpathentry>
+  <classpathentry kind="lib" path="/Users/arthurlin/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.12.jar"/>
   <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
   <classpathentry kind="output" path="bin"/>
 </classpath>
