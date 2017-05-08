@@ -46,9 +46,9 @@ class MediationSpec extends FlatSpec with Matchers {
 //     Mediation.prepareDeltaRdd(rdd).collect.toList shouldBe result
 //  }
   
-  "convertTimeToS3PartitionPath" should "convert datetime object to string with s3 format" in {
-    val dt = new DateTime("2017-06-05T02:34:56");
-    println(dt.toString("Y|MM|dd|HH").split('|').toList)
-    Mediation.convertTimeToS3PartitionPath(dt) shouldBe "year=2017/month=06/day=05/hour=02"
-  }
+//  "convertTimeToS3PartitionPath" should "convert datetime object to string with s3 format" in {
+//    val dt = new DateTime("2017-06-05T02:34:56");
+//    println(dt.toString("Y|MM|dd|HH").split('|').toList)
+//    Mediation.convertTimeToS3PartitionPath(dt) shouldBe "year=2017/month=06/day=05/hour=02"
+//  }
 }
