@@ -1,0 +1,551 @@
+format version: 5
+output mode:
+1 items
+0 -> single
+output directories:
+1 items
+output dir -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes
+compile options:
+0 items
+javac options:
+0 items
+compiler version:
+1 items
+0 -> 2.11.8
+compile order:
+1 items
+0 -> Mixed
+name hashing:
+1 items
+0 -> true
+products:
+38 items
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$anon$1.class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$anon$2.class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$anonfun$1.class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$anonfun$10.class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$anonfun$11.class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$anonfun$12.class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$anonfun$13.class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$anonfun$14.class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$anonfun$15.class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$anonfun$16.class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$anonfun$17.class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$anonfun$18.class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$anonfun$19.class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$anonfun$2.class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$anonfun$20.class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$anonfun$3.class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$anonfun$4.class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$anonfun$5.class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$anonfun$6.class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$anonfun$7.class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$anonfun$8.class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$anonfun$9.class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$anonfun$bench$1.class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$anonfun$main$1.class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$anonfun$main$2.class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$typecreator1$1.class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$typecreator2$1.class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$typecreator5$1.class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$typecreator6$1.class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$typecreator7$1.class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$typecreator8$1.class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$typecreator9$1.class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$.class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$AdreqData$.class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$AdreqData.class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$Data$.class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$Data.class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello.class
+binary dependencies:
+8 items
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> /Users/arthurlin/.ivy2/cache/com.storm-enroute/scalameter-core_2.11/jars/scalameter-core_2.11-0.6.jar
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> /Users/arthurlin/.ivy2/cache/org.apache.spark/spark-catalyst_2.11/jars/spark-catalyst_2.11-2.1.0.jar
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> /Users/arthurlin/.ivy2/cache/org.apache.spark/spark-core_2.11/jars/spark-core_2.11-2.1.0.jar
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> /Users/arthurlin/.ivy2/cache/org.apache.spark/spark-sql_2.11/jars/spark-sql_2.11-2.1.0.jar
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> /Users/arthurlin/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> /Users/arthurlin/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> /Users/arthurlin/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.8.jar
+direct source dependencies:
+0 items
+direct external dependencies:
+0 items
+public inherited source dependencies:
+0 items
+public inherited external dependencies:
+0 items
+member reference internal dependencies:
+0 items
+member reference external dependencies:
+0 items
+inheritance internal dependencies:
+0 items
+inheritance external dependencies:
+0 items
+class names:
+38 items
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> example.Hello
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> example.Hello$
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> example.Hello$$anon$1
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> example.Hello$$anon$2
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> example.Hello$$anonfun$1
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> example.Hello$$anonfun$10
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> example.Hello$$anonfun$11
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> example.Hello$$anonfun$12
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> example.Hello$$anonfun$13
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> example.Hello$$anonfun$14
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> example.Hello$$anonfun$15
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> example.Hello$$anonfun$16
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> example.Hello$$anonfun$17
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> example.Hello$$anonfun$18
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> example.Hello$$anonfun$19
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> example.Hello$$anonfun$2
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> example.Hello$$anonfun$20
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> example.Hello$$anonfun$3
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> example.Hello$$anonfun$4
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> example.Hello$$anonfun$5
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> example.Hello$$anonfun$6
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> example.Hello$$anonfun$7
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> example.Hello$$anonfun$8
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> example.Hello$$anonfun$9
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> example.Hello$$anonfun$bench$1
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> example.Hello$$anonfun$main$1
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> example.Hello$$anonfun$main$2
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> example.Hello$$typecreator1$1
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> example.Hello$$typecreator2$1
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> example.Hello$$typecreator5$1
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> example.Hello$$typecreator6$1
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> example.Hello$$typecreator7$1
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> example.Hello$$typecreator8$1
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> example.Hello$$typecreator9$1
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> example.Hello$AdreqData
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> example.Hello$AdreqData$
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> example.Hello$Data
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> example.Hello$Data$
+used names:
+328 items
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> $anon
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> $conforms
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> $m
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> $m$untyped
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> $typecreator1
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> $typecreator2
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> $typecreator5
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> $typecreator6
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> $typecreator7
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> $typecreator8
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> $typecreator9
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> $u
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> %
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> &&
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> *
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> +
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> -
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> ->
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> /
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> ::
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> <:<
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> <byname>
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> <init>
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> <repeated>
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> ==
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> ===
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> ?0
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> A
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> AbstractFunction5
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> AbstractFunction7
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> AdreqData
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> Aggregator
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> Any
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> AnyRef
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> Array
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> ArrowAssoc
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> B
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> Boolean
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> Builder
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> CharSequence
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> Class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> ClassLoader
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> ClassSymbol
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> ClassTag
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> Column
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> Connection
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> Data
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> DataFrame
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> DataFrameNaFunctions
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> DataFrameReader
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> DataType
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> Dataset
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> Double
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> DriverManager
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> Encoder
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> Encoders
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> Exception
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> File
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> Function1
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> Function2
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> GENERAL_REQUIRED_KEYS
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> Hello
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> INVALID_GEO_ID
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> Inclusive
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> IndexOutOfBoundsException
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> Int
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> Internal
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> Iterable
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> Iterator
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> JSON
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> JSONObject
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> JavaUniverse
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> K
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> Key
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> KeyValue
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> KeyValueGroupedDataset
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> KeyWithDefault
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> List
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> Long
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> LongType
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> Map
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> MapType
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> MeasureBuilder
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> Metadata
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> Mirror
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> ModuleSymbol
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> Nil
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> None
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> Nothing
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> Object
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> Option
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> Ordering
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> PairRDDFunctions
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> Predef
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> Product
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> RDD
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> Range
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> Regex
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> ReificationSupportApi
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> RichInt
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> Row
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> S
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> ScalaRunTime
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> Seq
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> Serializable
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> SingleType
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> Singleton
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> Some
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> SparkContext
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> SparkSession
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> Statics
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> String
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> StringContext
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> StringOps
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> StringType
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> StructField
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> StructType
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> Symbol
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> System
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> T
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> T0
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> T1
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> T2
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> T3
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> T4
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> T5
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> T6
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> T7
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> ThisType
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> TraversableOnce
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> Tuple2
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> Tuple3
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> Tuple5
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> Tuple7
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> Type
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> TypeCreator
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> TypeRef
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> TypeSymbol
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> TypeTag
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> TypedColumn
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> U
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> U1
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> Unit
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> Universe
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> V
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> Window
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> WindowSpec
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> _$7
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> _1
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> _2
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> _merge_adreq_stat
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> _root_
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> _toString
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> _update_adreq_stat
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> adreq
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> adreq2
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> adreqData
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> adreq_initial_state
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> agg
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> aggregateByKey
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> aggregator
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> anyHash
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> apache
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> appName
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> apply
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> as
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> asInstanceOf
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> asModule
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> asType
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> augmentString
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> bench
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> benchRuns
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> buildSchema
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> builder
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> cache
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> code
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> col
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> collection
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> config
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> count
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> count1
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> count2
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> crystal_id
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> ct
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> current_time
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> data
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> decode_adreq_type
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> decode_adreq_type_as_string
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> decode_adreq_type_rdd
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> device_id
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> df
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> drop
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> ds
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> e
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> eq
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> event_type
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> example
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> exec
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> expressions
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> filter
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> finalizeHash
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> finalresult
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> flatMap
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> foldLeft
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> foreach
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> functions
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> genRequestList
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> genRequestListRdd
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> genRequestListRddAsString
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> generate_adreq_analytic_result
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> generate_adreq_analytic_result_ds_string
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> generate_adreq_analytic_result_rdd
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> geo_id
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> get
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> getClass
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> getClassLoader
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> getOrCreate
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> groupByKey
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> head
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> immutable
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> implicits
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> intWrapper
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> internal
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> io
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> isInstanceOf
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> isNull
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> java
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> json
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> key
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> keys
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> label
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> lang
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> loadDFByHour
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> longHash
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> map
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> matching
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> materializeClassTag
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> materializeTypeTag
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> math
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> measure
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> mix
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> moduleClass
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> na
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> nanoTime
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> newProductEncoder
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> newStringEncoder
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> or
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> orderBy
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> org
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> otherwise
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> over
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> package
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> parseFull
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> parsing
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> partitionBy
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> path
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> placement
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> placements
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> places
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> println
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> props
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> r
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> rdd
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> rddToPairRDDFunctions
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> read
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> reduceByKey
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> reduceGroups
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> refTime
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> reflect
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> reificationSupport
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> replace
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> request_count
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> requests
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> result
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> result_count
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> results
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> row_number
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> runtime
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> runtimeMirror
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> s
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> scala
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> scalaInt
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> scalalang
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> scalameter
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> schema
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> selectType
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> setLogLevel
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> show
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> size
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> source_bucket
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> spark
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> sparkContext
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> split
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> sql
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> st
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> start
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> stat
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> stat1
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> stat2
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> staticClass
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> staticModule
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> staticPackage
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> sum
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> tail
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> time
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> times
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> to
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> toColumn
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> toInt
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> toMap
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> toString
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> toTypeConstructor
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> tuple
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> typed
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> typedProductIterator
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> types
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> union
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> universe
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> url
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> util
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> value
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> values
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> when
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> where
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> win
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> withColumn
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> x
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> ||
+product stamps:
+38 items
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$anon$1.class -> lastModified(1493976364000)
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$anon$2.class -> lastModified(1493976364000)
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$anonfun$1.class -> lastModified(1493976364000)
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$anonfun$10.class -> lastModified(1493976364000)
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$anonfun$11.class -> lastModified(1493976364000)
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$anonfun$12.class -> lastModified(1493976364000)
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$anonfun$13.class -> lastModified(1493976364000)
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$anonfun$14.class -> lastModified(1493976364000)
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$anonfun$15.class -> lastModified(1493976364000)
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$anonfun$16.class -> lastModified(1493976364000)
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$anonfun$17.class -> lastModified(1493976364000)
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$anonfun$18.class -> lastModified(1493976364000)
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$anonfun$19.class -> lastModified(1493976364000)
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$anonfun$2.class -> lastModified(1493976364000)
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$anonfun$20.class -> lastModified(1493976364000)
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$anonfun$3.class -> lastModified(1493976364000)
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$anonfun$4.class -> lastModified(1493976364000)
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$anonfun$5.class -> lastModified(1493976364000)
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$anonfun$6.class -> lastModified(1493976364000)
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$anonfun$7.class -> lastModified(1493976364000)
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$anonfun$8.class -> lastModified(1493976364000)
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$anonfun$9.class -> lastModified(1493976364000)
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$anonfun$bench$1.class -> lastModified(1493976364000)
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$anonfun$main$1.class -> lastModified(1493976364000)
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$anonfun$main$2.class -> lastModified(1493976364000)
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$typecreator1$1.class -> lastModified(1493976364000)
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$typecreator2$1.class -> lastModified(1493976364000)
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$typecreator5$1.class -> lastModified(1493976364000)
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$typecreator6$1.class -> lastModified(1493976364000)
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$typecreator7$1.class -> lastModified(1493976364000)
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$typecreator8$1.class -> lastModified(1493976364000)
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$$typecreator9$1.class -> lastModified(1493976364000)
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$.class -> lastModified(1493976364000)
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$AdreqData$.class -> lastModified(1493976364000)
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$AdreqData.class -> lastModified(1493976364000)
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$Data$.class -> lastModified(1493976364000)
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello$Data.class -> lastModified(1493976364000)
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/target/scala-2.11/classes/example/Hello.class -> lastModified(1493976364000)
+source stamps:
+1 items
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> hash(823fe0b378ae53fa8d943989126c8f7a0ddb2770)
+binary stamps:
+8 items
+/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar -> lastModified(1481605174000)
+/Users/arthurlin/.ivy2/cache/com.storm-enroute/scalameter-core_2.11/jars/scalameter-core_2.11-0.6.jar -> lastModified(1405518657000)
+/Users/arthurlin/.ivy2/cache/org.apache.spark/spark-catalyst_2.11/jars/spark-catalyst_2.11-2.1.0.jar -> lastModified(1481872148000)
+/Users/arthurlin/.ivy2/cache/org.apache.spark/spark-core_2.11/jars/spark-core_2.11-2.1.0.jar -> lastModified(1481871925000)
+/Users/arthurlin/.ivy2/cache/org.apache.spark/spark-sql_2.11/jars/spark-sql_2.11-2.1.0.jar -> lastModified(1481872304000)
+/Users/arthurlin/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar -> lastModified(1430402867000)
+/Users/arthurlin/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar -> lastModified(1457105192000)
+/Users/arthurlin/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.8.jar -> lastModified(1457105200000)
+class names:
+8 items
+/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar -> java.lang.Object
+/Users/arthurlin/.ivy2/cache/com.storm-enroute/scalameter-core_2.11/jars/scalameter-core_2.11-0.6.jar -> org.scalameter.Keys
+/Users/arthurlin/.ivy2/cache/org.apache.spark/spark-catalyst_2.11/jars/spark-catalyst_2.11-2.1.0.jar -> org.apache.spark.sql.types.StructType$
+/Users/arthurlin/.ivy2/cache/org.apache.spark/spark-core_2.11/jars/spark-core_2.11-2.1.0.jar -> org.apache.spark.rdd.PairRDDFunctions
+/Users/arthurlin/.ivy2/cache/org.apache.spark/spark-sql_2.11/jars/spark-sql_2.11-2.1.0.jar -> org.apache.spark.sql.expressions.Aggregator
+/Users/arthurlin/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar -> scala.util.parsing.json.JSONObject$
+/Users/arthurlin/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar -> scala.Product
+/Users/arthurlin/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.8.jar -> scala.reflect.api.TypeCreator
+internal apis:
+1 items
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhw9wR+NwAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAABFc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwaYzBCHQABm5vdGlmeXNxAH4ADK+rbqh0AAd1bmFwcGx5c3EAfgAMTt/bXHQAAnN0c3EAfgAMQL3VoXQAHmdlbmVyYXRlX2FkcmVxX2FuYWx5dGljX3Jlc3VsdHNxAH4ADJcAl2h0AAdjdXJyaWVkc3EAfgAMZC6Bj3QACWRldmljZV9pZHNxAH4ADIPuHlh0AChnZW5lcmF0ZV9hZHJlcV9hbmFseXRpY19yZXN1bHRfZHNfc3RyaW5nc3EAfgAMLttgSnQAFUdFTkVSQUxfUkVRVUlSRURfS0VZU3NxAH4ADMZ4b2p0AAR3YWl0c3EAfgAMXFg6AnQADmNvcHkkZGVmYXVsdCQyc3EAfgAM2qy4s3QADSRhc0luc3RhbmNlT2ZzcQB+AAy6bgZCdAAOY29weSRkZWZhdWx0JDVzcQB+AAzqpYxFdAAWY29udmVydF90b19wdXJlX3N0cmluZ3NxAH4ADAk0yjR0AAV0aW1lZHNxAH4ADMDI/zN0AAxwcm9kdWN0QXJpdHlzcQB+AAxUUSz6dAAGZXF1YWxzc3EAfgAMEAz1TXQACUFkcmVxRGF0YXNxAH4ADNuDNZ90ABFkZWNvZGVfYWRyZXFfdHlwZXNxAH4ADB7BFjd0AAtidWlsZFNjaGVtYXNxAH4ADCB1n4t0ABtkZWNvZGVfYWRyZXFfdHlwZV9hc19zdHJpbmdzcQB+AAz9zfbddAAiZ2VuZXJhdGVfYWRyZXFfYW5hbHl0aWNfcmVzdWx0X3JkZHNxAH4ADBFNHpR0AAxhc0luc3RhbmNlT2ZzcQB+AAyDuvqPdAARZ2VuUmVxdWVzdExpc3RSZGRzcQB+AAzx3htHdAAMc3luY2hyb25pemVkc3EAfgAMhaSZ+XQADSRpc0luc3RhbmNlT2ZzcQB+AAxBCp+/dAAGdHVwbGVkc3EAfgAMdpo3pHQACGNhbkVxdWFsc3EAfgAMvzcgH3QADmNvcHkkZGVmYXVsdCQ0c3EAfgAM9oPZ7XQABG1haW5zcQB+AAxd2z3adAANcHJvZHVjdFByZWZpeHNxAH4ADFKiRYd0ABlnZW5SZXF1ZXN0TGlzdFJkZEFzU3RyaW5nc3EAfgAMMrh/mnQADXJlcXVlc3RfY291bnRzcQB+AAzYODD1dAAMbG9hZERGQnlIb3Vyc3EAfgAMFUHhPXQACW5vdGlmeUFsbHNxAH4ADBFti4B0AAxpc0luc3RhbmNlT2ZzcQB+AAz2gBucdAAOSU5WQUxJRF9HRU9fSURzcQB+AAxzcgF9dAAJcGxhY2VtZW50c3EAfgAMj+aXMXQABjxpbml0PnNxAH4ADEpqIp50AAVhcHBseXNxAH4ADGpJuDd0AA5nZW5SZXF1ZXN0TGlzdHNxAH4ADJgcGcp0AAI9PXNxAH4ADIl4DqR0AAZnZW9faWRzcQB+AAwPRIUjdAAKZXZlbnRfdHlwZXNxAH4ADCIdXWR0AAVjbG9uZXNxAH4ADNGyUHl0AAVIZWxsb3NxAH4ADD2HZl90AA5jb3B5JGRlZmF1bHQkN3NxAH4ADNH1LOh0AAYkaW5pdCRzcQB+AAznJP/idAAOY29weSRkZWZhdWx0JDNzcQB+AAwc7xVcdAAEY29weXNxAH4ADAz7Rdp0AAh0b1N0cmluZ3NxAH4ADPgzM2V0AAIhPXNxAH4ADCtIBot0ABVkZWNvZGVfYWRyZXFfdHlwZV9yZGRzcQB+AAwBlRRadAAEdGltZXNxAH4ADEGvrU50AAhnZXRDbGFzc3NxAH4ADOneHRN0AA5jb3B5JGRlZmF1bHQkMXNxAH4ADPR6zmB0AA9iZW5jaCRkZWZhdWx0JDNzcQB+AAyaWnoddAAFcHJvcHNzcQB+AAyW8wnzdAAOY29weSRkZWZhdWx0JDZzcQB+AAw+8+rJdAACbmVzcQB+AAwqiNRpdAAMcmVzdWx0X2NvdW50c3EAfgAM+wuCBHQABERhdGFzcQB+AAyWItdKdAACZXFzcQB+AAyBjcj0dAAPcHJvZHVjdEl0ZXJhdG9yc3EAfgAMb0p4KHQAAiMjc3EAfgAMhei/I3QACmNyeXN0YWxfaWRzcQB+AAwvzABXdAAIZmluYWxpemVzcQB+AAxn8UPkdAAOcHJvZHVjdEVsZW1lbnRzcQB+AAxJ88T1dAAIaGFzaENvZGVzcQB+AAxRj8XFdAAFYmVuY2hzcgATeHNidGkuYXBpLlNvdXJjZUFQSblep/kpIzikAgACWwALZGVmaW5pdGlvbnN0ABdbTHhzYnRpL2FwaS9EZWZpbml0aW9uO1sACHBhY2thZ2VzdAAUW0x4c2J0aS9hcGkvUGFja2FnZTt4cHVyABdbTHhzYnRpLmFwaS5EZWZpbml0aW9uO4jJXOe0414OAgAAeHAAAAABc3IAE3hzYnRpLmFwaS5DbGFzc0xpa2WDNByh37CXbAIABEwADmRlZmluaXRpb25UeXBldAAaTHhzYnRpL2FwaS9EZWZpbml0aW9uVHlwZTtbABBzYXZlZEFubm90YXRpb25zdAATW0xqYXZhL2xhbmcvU3RyaW5nO0wACHNlbGZUeXBldAAQTHhzYnRpL2FwaS9MYXp5O0wACXN0cnVjdHVyZXEAfgCheHIAIXhzYnRpLmFwaS5QYXJhbWV0ZXJpemVkRGVmaW5pdGlvbvkRbrHVUDziAgABWwAOdHlwZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9UeXBlUGFyYW1ldGVyO3hyABR4c2J0aS5hcGkuRGVmaW5pdGlvbocqG+hxQuNGAgAETAAGYWNjZXNzdAASTHhzYnRpL2FwaS9BY2Nlc3M7WwALYW5ub3RhdGlvbnN0ABdbTHhzYnRpL2FwaS9Bbm5vdGF0aW9uO0wACW1vZGlmaWVyc3QAFUx4c2J0aS9hcGkvTW9kaWZpZXJzO0wABG5hbWVxAH4ADXhwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnOX52HcEyZ7swIAAUIABWZsYWdzeHAAdAANZXhhbXBsZS5IZWxsb3VyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQABk1vZHVsZXVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgAheHNidGkuYXBpLkFic3RyYWN0TGF6eSRTdHJpY3RMYXp5DWYcaykWKrgCAAFMAAV2YWx1ZXQAEkxqYXZhL2xhbmcvT2JqZWN0O3hwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AuXNyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgChTAAJaW5oZXJpdGVkcQB+AKFMAAdwYXJlbnRzcQB+AKF4cQB+AL5zcQB+ALl1cQB+AJwAAAABc3IADXhzYnRpLmFwaS5EZWZSvp/ifLQ2aQIAAkwACnJldHVyblR5cGV0ABBMeHNidGkvYXBpL1R5cGU7WwAPdmFsdWVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvUGFyYW1ldGVyTGlzdDt4cQB+AKJxAH4Aq3VxAH4ArAAAAABzcQB+AK4AcQB+AEd1cQB+ALEAAAAAc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgANTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hxAH4AvXQABFVuaXRzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+AL1zcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAAJzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgANeHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABXNjYWxhc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+ANl1cgAaW0x4c2J0aS5hcGkuUGFyYW1ldGVyTGlzdDv10zod8rNw7gIAAHhwAAAAAXNyABd4c2J0aS5hcGkuUGFyYW1ldGVyTGlzdNbFvBxkSXTjAgACWgAKaXNJbXBsaWNpdFsACnBhcmFtZXRlcnN0ABxbTHhzYnRpL2FwaS9NZXRob2RQYXJhbWV0ZXI7eHAAdXIAHFtMeHNidGkuYXBpLk1ldGhvZFBhcmFtZXRlcjvPuMVdpd21bQIAAHhwAAAAAXNyABl4c2J0aS5hcGkuTWV0aG9kUGFyYW1ldGVyH0WuF9NJsOoCAARaAApoYXNEZWZhdWx0TAAIbW9kaWZpZXJ0AB1MeHNidGkvYXBpL1BhcmFtZXRlck1vZGlmaWVyO0wABG5hbWVxAH4ADUwAA3RwZXEAfgDGeHAAfnIAG3hzYnRpLmFwaS5QYXJhbWV0ZXJNb2RpZmllcgAAAAAAAAAAEgAAeHEAfgC0dAAFUGxhaW50AARhcmdzc3IAF3hzYnRpLmFwaS5QYXJhbWV0ZXJpemVkFmzuaQPJu38CAAJMAAhiYXNlVHlwZXEAfgDNWwANdHlwZUFyZ3VtZW50c3QAEVtMeHNidGkvYXBpL1R5cGU7eHEAfgC9c3EAfgDMdAAFQXJyYXlxAH4A0nVyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAABc3EAfgDMdAAGU3RyaW5nc3EAfgDQc3EAfgDTdXEAfgDWAAAAA3NxAH4A2HQABGphdmFzcQB+ANh0AARsYW5ncQB+AN1zcQB+ALl1cQB+AJwAAAAAc3EAfgC5dXEAfgDxAAAAAnNxAH4AzHQABk9iamVjdHEAfgD1c3EAfgDMdAADQW55cQB+ANJ1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAXNyABF4c2J0aS5hcGkuUGFja2FnZX5Zj/auzjlYAgABTAAEbmFtZXEAfgANeHB0AAdleGFtcGxlc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFb1+4cwXVyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4ADUwAD3NvdXJjZURpcmVjdG9yeXEAfgANeHB0AFovVXNlcnMvYXJ0aHVybGluL0RvY3VtZW50cy9HaXRIdWIvU2NhbGEtUHJhY3RpY2Uvd29ya3NwYWNlL2hlbGxvL3RhcmdldC9zY2FsYS0yLjExL2NsYXNzZXN0AAEvdXIAAltCrPMX+AYIVOACAAB4cAAAABSCP+CzeK5T+o2UOYkSbI96DdsncA==
+external apis:
+0 items
+source infos:
+1 items
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/hello/src/main/scala/example/Hello.scala -> 
+AAAAAAAAAAA=
+compilations:
+20 items
+00 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABW9ZfbV11cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAWi9Vc2Vycy9hcnRodXJsaW4vRG9jdW1lbnRzL0dpdEh1Yi9TY2FsYS1QcmFjdGljZS93b3Jrc3BhY2UvaGVsbG8vdGFyZ2V0L3NjYWxhLTIuMTEvY2xhc3Nlc3QAAS8=
+01 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABW9ZmxP91cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAWi9Vc2Vycy9hcnRodXJsaW4vRG9jdW1lbnRzL0dpdEh1Yi9TY2FsYS1QcmFjdGljZS93b3Jrc3BhY2UvaGVsbG8vdGFyZ2V0L3NjYWxhLTIuMTEvY2xhc3Nlc3QAAS8=
+02 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABW9Zo2fp1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAWi9Vc2Vycy9hcnRodXJsaW4vRG9jdW1lbnRzL0dpdEh1Yi9TY2FsYS1QcmFjdGljZS93b3Jrc3BhY2UvaGVsbG8vdGFyZ2V0L3NjYWxhLTIuMTEvY2xhc3Nlc3QAAS8=
+03 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABW9ZxCfl1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAWi9Vc2Vycy9hcnRodXJsaW4vRG9jdW1lbnRzL0dpdEh1Yi9TY2FsYS1QcmFjdGljZS93b3Jrc3BhY2UvaGVsbG8vdGFyZ2V0L3NjYWxhLTIuMTEvY2xhc3Nlc3QAAS8=
+04 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABW9aW5ZV1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAWi9Vc2Vycy9hcnRodXJsaW4vRG9jdW1lbnRzL0dpdEh1Yi9TY2FsYS1QcmFjdGljZS93b3Jrc3BhY2UvaGVsbG8vdGFyZ2V0L3NjYWxhLTIuMTEvY2xhc3Nlc3QAAS8=
+05 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABW9aYtB91cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAWi9Vc2Vycy9hcnRodXJsaW4vRG9jdW1lbnRzL0dpdEh1Yi9TY2FsYS1QcmFjdGljZS93b3Jrc3BhY2UvaGVsbG8vdGFyZ2V0L3NjYWxhLTIuMTEvY2xhc3Nlc3QAAS8=
+06 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABW9agZid1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAWi9Vc2Vycy9hcnRodXJsaW4vRG9jdW1lbnRzL0dpdEh1Yi9TY2FsYS1QcmFjdGljZS93b3Jrc3BhY2UvaGVsbG8vdGFyZ2V0L3NjYWxhLTIuMTEvY2xhc3Nlc3QAAS8=
+07 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABW9asVy51cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAWi9Vc2Vycy9hcnRodXJsaW4vRG9jdW1lbnRzL0dpdEh1Yi9TY2FsYS1QcmFjdGljZS93b3Jrc3BhY2UvaGVsbG8vdGFyZ2V0L3NjYWxhLTIuMTEvY2xhc3Nlc3QAAS8=
+08 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABW9a8Td51cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAWi9Vc2Vycy9hcnRodXJsaW4vRG9jdW1lbnRzL0dpdEh1Yi9TY2FsYS1QcmFjdGljZS93b3Jrc3BhY2UvaGVsbG8vdGFyZ2V0L3NjYWxhLTIuMTEvY2xhc3Nlc3QAAS8=
+09 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABW9a/iYN1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAWi9Vc2Vycy9hcnRodXJsaW4vRG9jdW1lbnRzL0dpdEh1Yi9TY2FsYS1QcmFjdGljZS93b3Jrc3BhY2UvaGVsbG8vdGFyZ2V0L3NjYWxhLTIuMTEvY2xhc3Nlc3QAAS8=
+10 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABW9bFi8h1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAWi9Vc2Vycy9hcnRodXJsaW4vRG9jdW1lbnRzL0dpdEh1Yi9TY2FsYS1QcmFjdGljZS93b3Jrc3BhY2UvaGVsbG8vdGFyZ2V0L3NjYWxhLTIuMTEvY2xhc3Nlc3QAAS8=
+11 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABW9bHNrN1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAWi9Vc2Vycy9hcnRodXJsaW4vRG9jdW1lbnRzL0dpdEh1Yi9TY2FsYS1QcmFjdGljZS93b3Jrc3BhY2UvaGVsbG8vdGFyZ2V0L3NjYWxhLTIuMTEvY2xhc3Nlc3QAAS8=
+12 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABW9bZQ1t1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAWi9Vc2Vycy9hcnRodXJsaW4vRG9jdW1lbnRzL0dpdEh1Yi9TY2FsYS1QcmFjdGljZS93b3Jrc3BhY2UvaGVsbG8vdGFyZ2V0L3NjYWxhLTIuMTEvY2xhc3Nlc3QAAS8=
+13 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABW9bc6151cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAWi9Vc2Vycy9hcnRodXJsaW4vRG9jdW1lbnRzL0dpdEh1Yi9TY2FsYS1QcmFjdGljZS93b3Jrc3BhY2UvaGVsbG8vdGFyZ2V0L3NjYWxhLTIuMTEvY2xhc3Nlc3QAAS8=
+14 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABW9bqrJ51cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAWi9Vc2Vycy9hcnRodXJsaW4vRG9jdW1lbnRzL0dpdEh1Yi9TY2FsYS1QcmFjdGljZS93b3Jrc3BhY2UvaGVsbG8vdGFyZ2V0L3NjYWxhLTIuMTEvY2xhc3Nlc3QAAS8=
+15 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABW9bs3vR1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAWi9Vc2Vycy9hcnRodXJsaW4vRG9jdW1lbnRzL0dpdEh1Yi9TY2FsYS1QcmFjdGljZS93b3Jrc3BhY2UvaGVsbG8vdGFyZ2V0L3NjYWxhLTIuMTEvY2xhc3Nlc3QAAS8=
+16 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABW9e3d/B1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAWi9Vc2Vycy9hcnRodXJsaW4vRG9jdW1lbnRzL0dpdEh1Yi9TY2FsYS1QcmFjdGljZS93b3Jrc3BhY2UvaGVsbG8vdGFyZ2V0L3NjYWxhLTIuMTEvY2xhc3Nlc3QAAS8=
+17 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABW9e4vHx1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAWi9Vc2Vycy9hcnRodXJsaW4vRG9jdW1lbnRzL0dpdEh1Yi9TY2FsYS1QcmFjdGljZS93b3Jrc3BhY2UvaGVsbG8vdGFyZ2V0L3NjYWxhLTIuMTEvY2xhc3Nlc3QAAS8=
+18 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABW9ftH9B1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAWi9Vc2Vycy9hcnRodXJsaW4vRG9jdW1lbnRzL0dpdEh1Yi9TY2FsYS1QcmFjdGljZS93b3Jrc3BhY2UvaGVsbG8vdGFyZ2V0L3NjYWxhLTIuMTEvY2xhc3Nlc3QAAS8=
+19 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABW9fuHMF1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAWi9Vc2Vycy9hcnRodXJsaW4vRG9jdW1lbnRzL0dpdEh1Yi9TY2FsYS1QcmFjdGljZS93b3Jrc3BhY2UvaGVsbG8vdGFyZ2V0L3NjYWxhLTIuMTEvY2xhc3Nlc3QAAS8=
