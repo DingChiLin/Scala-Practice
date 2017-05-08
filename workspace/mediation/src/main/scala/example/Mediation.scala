@@ -211,6 +211,7 @@ object Mediation {
   def decode_adreq_type(data:Data):List[AdreqData] = {
     val props = data.props
     val requests = JSON.parseFull(props("requests")).get.asInstanceOf[Map[String, Map[String, Any]]]
+//    val requests2 = (Json.parse(props("request"))).as[Map[String, Map[String, AnyRef]]]//.getOrElse( Map("STREAM_C_ROADBLOCK_2" -> Map("1" -> "3"))  )   
     // TODO: doesn't process requests yet
   //  val results = JSON.parseFull(props("result")).get.asInstanceOf[Map[String, Map[String, Any]]]
     // TODO: how to concat two list? time complexity?

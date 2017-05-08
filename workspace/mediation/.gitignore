@@ -1,10 +1,6 @@
-target/
 /bin/
 
 ### SBT ###
-# Simple Build Tool
-# http://www.scala-sbt.org/release/docs/Getting-Started/Directories.html#configuring-version-control
-
 dist/*
 target/
 lib_managed/
@@ -19,3 +15,10 @@ project/plugins/project/
 *.class
 *.log
 
+### Eclipse ###
+build
+.classpath
+.project
+.settings
+org.scala-ide.sdt.core/META-INF/MANIFEST.MF
+org.scala-ide.sdt.update-site/site.xml`
