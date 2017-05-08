@@ -36,39 +36,35 @@ object Hello{
       SparkSession
         .builder()
         .appName("Time Usage")
-//        .config("spark.master", "local[4]")
+        .config("spark.master", "local[4]")
         .getOrCreate()
       
     spark.sparkContext.setLogLevel("ERROR")     
     import spark.implicits._
      
     println("Hello") 
-//    val source_bucket = "/Users/arthurlin/Desktop/aws_s3_files" 
-    val source_bucket = "s3://ce-production-raw-event-logs/ADREQ"
-    val current_time = "year=2017/month=04/day=20/hour=01" //new DateTime("2017-04-20T00:34:56").minute(0).second(0) //TODO:should be today
+    val source_bucket = "/Users/arthurlin/Desktop/aws_s3_files" 
+//    val source_bucket = "s3://ce-production-raw-event-logs/ADREQ"
+    val current_time = "year=2017/month=04/day=20/hour=03" //new DateTime("2017-04-20T00:34:56").minute(0).second(0) //TODO:should be today
     
     val data = loadDFByHour(spark, current_time, source_bucket).get
     data.show()
-//    timed("loadDFData", data.count)
-        
-    val ds = data.as[Data]
-    ds.cache
-    ds.count
-    bench("final result ds using string", generate_adreq_analytic_result_ds_string(spark, ds).count, 2)
-
-
-//    println(ds.count)
+//        
+//    val ds = data.as[Data]
+//    ds.cache
+//    ds.count
+//
+//    val rdd_object = ds.rdd.cache
+//    rdd_object.count
+////    bench("final result rdd using object", generate_adreq_analytic_result_rdd(rdd_object).count, 2)
 //    
-//    timed("final result ds using object", generate_adreq_analytic_result(spark, ds).count)
-//    timed("final result ds using string", generate_adreq_analytic_result_ds_string(spark, ds).count)
-   
-    val rdd = ds.rdd.cache//.map(x => convert_to_pure_string(x)).cache // convert to pure string to do benchmark
-    rdd.count
-//    timed("final result rdd", generate_adreq_analytic_result_rdd(rdd).count)
-    bench("final result rdd", generate_adreq_analytic_result_rdd(rdd).count, 2)
+//    val rdd = ds.rdd.map(x => convert_to_pure_string(x)).cache // convert to pure string to do benchmark
+//    rdd.count
+//    bench("final result rdd using string", generate_adreq_analytic_result_rdd_string(rdd).count, 2)
+//
+//    
 //    bench("final result ds using object", generate_adreq_analytic_result(spark, ds).count, 2)
-
-
+////    bench("final result ds using string", generate_adreq_analytic_result_ds_string(spark, ds).count, 2)
   }
   
   def convert_to_pure_string(data: Data):String = {
@@ -79,31 +75,42 @@ object Hello{
     }
   }
   
-  // RDD 
-//  def generate_adreq_analytic_result_rdd2(data: RDD[String]):RDD[(String, (Int, Int))] = {
-//    
-//    val adreq_initial_state = (0,0) 
-//    def _merge_adreq_stat(stat1:(Int, Int), stat2:(Int, Int)): (Int, Int) = {
-//      (stat1._1 + stat2._1, stat1._2 + stat2._2)
-//    }
-//    
-//    def _update_adreq_stat(stat:(Int, Int), r:String): (Int, Int) = {
-//      val results = r.split("""\|""")
-//      val req_or_res = results(0)
-//      (stat._1 + results(1).toInt, stat._2)
-//    }
-//    
-//    val adreq = data
-//      .filter(_.contains("ad_request"))
-//      .flatMap(decode_adreq_type_rdd)
-//      .aggregateByKey(adreq_initial_state)(_update_adreq_stat, _merge_adreq_stat)
-//      
-//    val adreq2 = adreq.union(adreq)
-//    val result = adreq2.reduceByKey(_merge_adreq_stat)
-//      
-//    return result
-//  }
+  // RDD pure string 
+  def generate_adreq_analytic_result_rdd_string(data: RDD[String]):RDD[(String, (Int, Int))] = {
+    
+    val adreq_initial_state = (0,0) 
+    def _merge_adreq_stat(stat1:(Int, Int), stat2:(Int, Int)): (Int, Int) = {
+      (stat1._1 + stat2._1, stat1._2 + stat2._2)
+    }
+    
+    def _update_adreq_stat(stat:(Int, Int), r:String): (Int, Int) = {
+      val results = r.split("""\|""")
+      val req_or_res = results(0)
+      (stat._1 + results(1).toInt, stat._2)
+    }
+    
+    val adreq = data
+      .filter(_.contains("ad_request"))
+      .flatMap(decode_adreq_type_rdd_string)
+      .aggregateByKey(adreq_initial_state)(_update_adreq_stat, _merge_adreq_stat)
+      
+    val adreq2 = adreq.union(adreq)
+    val result = adreq2.reduceByKey(_merge_adreq_stat)
+      
+    return result
+  }
   
+  def decode_adreq_type_rdd_string(data:String):List[(String, String)] = {
+    val values = data.split("""\|""")
+    val crystal_id = values(0)
+    val geo_id = values(1).toInt - (values(1).toInt % 1000000)
+//    val requests = (Json.parse(values(3)) \ "requests").asOpt[Map[String, Map[String, List[String]]]].getOrElse( Map("STREAM_C_ROADBLOCK_2" -> Map("1" -> "3"))  )    
+    val requests = JSON.parseFull(values(3)).get.asInstanceOf[Map[String , Map[String, Map[String, Any]]]]("requests")
+    return genRequestListRdd(requests, requests.keys, crystal_id, geo_id.toString)
+  }
+  
+  
+  // RDD Object
   def generate_adreq_analytic_result_rdd(data: RDD[Data]):RDD[(String, (Int, Int))] = {
     
     val adreq_initial_state = (0,0) 
