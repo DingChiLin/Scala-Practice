@@ -103,9 +103,7 @@ object TimeUsage {
     """)
     val time = config(
       Key.exec.benchRuns -> 10
-    ) withWarmer {
-      new Warmer.Default
-    } measure {
+    ) measure {
       code
     }
     println(s"Total time: $time")
