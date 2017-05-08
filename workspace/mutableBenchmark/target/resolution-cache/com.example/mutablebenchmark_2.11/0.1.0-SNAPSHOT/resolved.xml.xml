@@ -4,7 +4,7 @@
 		module="mutablebenchmark_2.11"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20170506161809"
+		publication="20170508101014"
 	>
 		<description>
 		mutableBenchmark
