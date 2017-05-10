@@ -16,12 +16,14 @@ object mutableBenchmark{
     val vector = appendVector
 
     // append
-//    timed("Array append", appendArray)
-//    timed("ArrayBuffer append", appendArrayBuffer)
+    timed("Array append", appendArray)
+    timed("ArrayBuffer append", appendArrayBuffer)
 ////    timed("List append", appendList)
-//    timed("ListBuffer append", appendListBuffer)
+    timed("ListBuffer append", appendListBuffer)
 //    timed("Vector append", appendVector)
-//    timed("List append recursively", recursivelyAppendList())
+    timed("List append recursively", recursivelyAppendList())
+    timed("List append recursively reverse", recursivelyAppendList().reverse)
+
 //    timed("Vector append recursively", recursivelyAppendVector())
 
 
