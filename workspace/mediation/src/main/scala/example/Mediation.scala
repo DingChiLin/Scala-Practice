@@ -18,12 +18,11 @@ import org.apache.spark.sql.expressions.Window
 import org.apache.spark.sql.expressions.Aggregator
 import org.apache.spark.sql.expressions.scalalang.typed
 import org.apache.spark.sql.Encoder
-
-object Mediation {
- 
-  import org.apache.spark.sql.SparkSession
-  import org.apache.spark.sql.functions._
-    
+import org.apache.spark.sql.SparkSession
+import org.apache.spark.sql.functions._
+  
+object AdreqAnalyzer {
+  
   val INVALID_GEO_ID = -321
   val PARTITION_SIZE = 100
   val GENERAL_REQUIRED_KEYS = List("type", "time")
@@ -36,11 +35,18 @@ object Mediation {
     "password" -> "1234"
   )
   
-  case class Data(crystal_id:String, device_id:String, event_type:String, st: Long, time:Long, geo_id:Long, props:scala.collection.Map[String, String])
-  case class AdreqData(crystal_id:String, geo_id:Long, placement:String, request_count:Int, result_count:Int)
-//  case class AdreqResult(key:(String, Long, String), total_count:(Int, Int))
+  val spark: SparkSession =
+    SparkSession
+      .builder()
+      .appName("Time Usage")
+      .config("spark.master", "local[4]")
+      .getOrCreate()
+    
+  spark.sparkContext.setLogLevel("ERROR")     
+  import spark.implicits._ 
   
-
+  case class Data(crystal_id:String, device_id:String, event_type:String, st: Long, time:Long, geo_id:Long, simple_geo_id:Long, props:scala.collection.Map[String, String])
+  case class AdreqData(crystal_id:String, geo_id:Long, placement:String, request_count:Int, result_count:Int) 
   
   def buildSchema(): StructType = {
     
@@ -56,6 +62,7 @@ object Mediation {
         StructField("crystal_id", StringType, true),
         StructField("device_id", StringType, false),
         StructField("geo_id", LongType, true),
+        StructField("simple_geo_id", LongType, true),
         StructField("nt", LongType, true),
         StructField("sdk_version", LongType, true),
         StructField("st", LongType, true),
@@ -68,237 +75,24 @@ object Mediation {
       )
     )  
   }
-
-  val spark: SparkSession =
-    SparkSession
-      .builder()
-      .appName("Time Usage")
-//      .config("spark.master", "local[4]")
-      .getOrCreate()
-    
-
-  spark.sparkContext.setLogLevel("ERROR")     
-  import spark.implicits._
-
-  def main(args: Array[String]) {
-    println("START!!!!")
-    val source_bucket = "s3://ce-production-raw-event-logs/ADREQ" //"s3://ce-production-raw-event-logs/ADREQ" //"/Users/arthurlin/Desktop/aws_s3_files" //TODO: should s3 path
-    val current_time = new DateTime("2017-04-20T01:34:56").minute(0).second(0) //TODO:should be today
+  
+  def start(){
+   
+//    val source_bucket = "s3://ce-production-raw-event-logs/ADREQ"
+    val source_bucket = "/Users/arthurlin/Desktop/aws_s3_files"
+    val current_time = new DateTime("2017-04-20T03:34:56").minute(0).second(0) //TODO:should be today
     val history_start_hour = current_time - 1.hour
     val history_end_hour = current_time
-    val result = loadRddByHour(current_time, source_bucket).get
-    result.show
     
-    val ds = result.as[Data]
-    ds.cache
-    ds.count
-    println(ds.count)
+    val path = convertTimeToS3PartitionPath(current_time)
+    val url = source_bucket + "/" + path + "/*.gz"
     
-    val t = ds.map(ttt)
-    t.show()
-    
-    val final_result = generate_adreq_analytic_result(ds).count
-    println(final_result)
-    timed("final result ds using object", generate_adreq_analytic_result(ds).count)
-    timed("final result ds using string", generate_adreq_analytic_result_ds_string(ds).count)
-
-    val rdd = ds.rdd.map(x => convert_to_pure_string(x)).cache // convert to pure string to do benchmark
-    rdd.count
-    timed("final result rdd", generate_adreq_analytic_result_rdd(rdd).count)
-    
-    spark.stop
+    val result2 = loadDFByHour(url).get.as[Data].cache
+    result2.show
+   
+    val final_result2 = generateAdreqAnalyticResult(result2)
+    final_result2.show()
   }
-  
-  def ttt(data: Data):String = {
-    data.crystal_id
-  }
-  
-  def convert_to_pure_string(data: Data):String = {
-    try{
-      (data.crystal_id + "|" + data.geo_id + "|" + data.event_type + "|" + scala.util.parsing.json.JSONObject(data.props.toMap)).replace("\\","").replace("\"{", "{").replace("}\"","}").replace("\"[", "[").replace("]\"","]")
-    }catch{
-      case e:Exception => ""
-    }
-  }
-  
-  // RDD 
-  def generate_adreq_analytic_result_rdd(data: RDD[String]):RDD[(String, (Int, Int))] = {
-    
-    val adreq_initial_state = (0,0) 
-    def _merge_adreq_stat(stat1:(Int, Int), stat2:(Int, Int)): (Int, Int) = {
-      (stat1._1 + stat2._1, stat1._2 + stat2._2)
-    }
-    
-    def _update_adreq_stat(stat:(Int, Int), r:String): (Int, Int) = {
-      val results = r.split("""\|""")
-      val req_or_res = results(0)
-      (stat._1 + results(1).toInt, stat._2)
-    }
-    
-    val adreq = data
-      .filter(_.contains("ad_request"))
-      .flatMap(decode_adreq_type_rdd)
-      .aggregateByKey(adreq_initial_state)(_update_adreq_stat, _merge_adreq_stat)
-      
-    val adreq2 = adreq.union(adreq)
-    val result = adreq2.reduceByKey(_merge_adreq_stat)
-      
-    return result
-  }
-  
-  def decode_adreq_type_rdd(data:String):List[(String, String)] = {
-    val values = data.split("""\|""")
-    val crystal_id = values(0)
-    val geo_id = values(1).toInt - (values(1).toInt % 1000000)
-//    val requests = (Json.parse(values(3)) \ "requests").asOpt[Map[String, Map[String, List[String]]]].getOrElse( Map("STREAM_C_ROADBLOCK_2" -> Map("1" -> "3"))  )    
-    val requests = JSON.parseFull(values(3)).get.asInstanceOf[Map[String, Map[String, Map[String, Any]]]]("requests")
-    return genRequestListRdd(requests, requests.keys, crystal_id, geo_id.toString)
-  }
-  
-  def genRequestListRdd(requests:Map[String, Map[String, Any]], placements:Iterable[String], crystal_id:String, geo_id:String):List[(String, String)] = {
-    if(placements.size == 0){
-      List[(String, String)]()
-    }else{
-      val placement = placements.head
-      val places = requests(placement)
-      val request_count = places.values.foldLeft(0){
-        (sum, x) => 
-        val count = x match{
-          case x:Int => x
-          case x:List[Any] => x.size
-          case _ => 0
-        }
-        sum + count
-      }
-      val key = crystal_id + "|" + geo_id + "|" + placement
-      val value = "req|" + request_count
-      val adreqData = (key, value)
-      adreqData::genRequestListRdd(requests, placements.tail, crystal_id, geo_id)
-    }
-  }
-  
-  // Dataset
-  def generate_adreq_analytic_result(data: Dataset[Data]): Dataset[((String, Long, String), (Int, Int))] = {
-    try{  
-      val aggregator = new Aggregator[AdreqData, (Int, Int), (Int, Int)]{
-        def zero: (Int, Int) = (0, 0)
-        def reduce(count:(Int, Int) ,data:AdreqData) = (count._1 + data.request_count, count._2 + data.result_count)
-        def merge(count1:(Int, Int), count2:(Int, Int)) = (count1._1 + count2._1, count1._2 + count2._2)
-        def finish(count:(Int, Int)) = count
-        override def bufferEncoder: Encoder[(Int, Int)] = Encoders.tuple(Encoders.scalaInt, Encoders.scalaInt)
-        override def outputEncoder: Encoder[(Int, Int)] = Encoders.tuple(Encoders.scalaInt, Encoders.scalaInt)
-      }.toColumn
-      
-      val adreq = data
-        .filter(_.event_type == "ad_request")
-        .flatMap(decode_adreq_type)
-        .groupByKey(x => (x.crystal_id, x.geo_id, x.placement))
-        .agg(aggregator)
-        
-      val adreq2 = adreq.union(adreq)       
-      val finalresult = adreq2.groupByKey((_._1)).reduceGroups((sum, x) => (sum._1, (sum._2._1 + x._2._1, sum._2._2 + x._2._2))).map(_._2)
-      finalresult
-    
-    }catch{
-      case e: Exception => {
-        println(s"generate_adreq_analytic_result error: $e") 
-        return null
-      }     
-    }
- 
-  }
-  
-  def decode_adreq_type(data:Data):List[AdreqData] = {
-    val props = data.props
-    val requests = JSON.parseFull(props("requests")).get.asInstanceOf[Map[String, Map[String, Any]]]
-//    val requests2 = (Json.parse(props("request"))).as[Map[String, Map[String, AnyRef]]]//.getOrElse( Map("STREAM_C_ROADBLOCK_2" -> Map("1" -> "3"))  )   
-    // TODO: doesn't process requests yet
-  //  val results = JSON.parseFull(props("result")).get.asInstanceOf[Map[String, Map[String, Any]]]
-    // TODO: how to concat two list? time complexity?
-    return genRequestList(requests, requests.keys, data)
-  }
-  
-  def genRequestList(requests:Map[String, Map[String, Any]], placements:Iterable[String], data: Data):List[AdreqData] = {
-    if(placements.size == 0){
-      List[AdreqData]()
-    }else{
-      val placement = placements.head
-      val places = requests(placement)
-      val request_count = places.values.foldLeft(0){
-        (sum, x) => 
-        val count = x match{
-          case x:Int => x
-          case x:List[Any] => x.size
-          case _ => 0
-        }
-        sum + count
-      }
-      val geo_id = data.geo_id - (data.geo_id % 1000000)
-      val adreqData = AdreqData(data.crystal_id, geo_id, placement, request_count, 0)
-      adreqData::genRequestList(requests, placements.tail, data)
-    }
-  }
-  
-  // Data set as String 
-  def generate_adreq_analytic_result_ds_string(data: Dataset[Data]): Dataset[(String, (Int, Int))] = {
-    
-    def _update_adreq_stat(count:(Int, Int) , data:(String, String)): (Int, Int) = {
-      val results = data._2.split("""\|""")
-      val req_or_res = results(0)
-      (count._1 + results(1).toInt, count._2)
-    }
-
-    val aggregator = new Aggregator[(String, String), (Int, Int), (Int, Int)]{
-      def zero: (Int, Int) = (0, 0)
-      def reduce(count:(Int, Int) , data:(String, String)) = _update_adreq_stat(count, data)
-      def merge(count1:(Int, Int), count2:(Int, Int)) = (count1._1 + count2._1, count1._2 + count2._2)
-      def finish(count:(Int, Int)) = count
-      override def bufferEncoder: Encoder[(Int, Int)] = Encoders.tuple(Encoders.scalaInt, Encoders.scalaInt)
-      override def outputEncoder: Encoder[(Int, Int)] = Encoders.tuple(Encoders.scalaInt, Encoders.scalaInt)
-    }.toColumn
-    
-    val adreq = data
-      .filter(_.event_type == "ad_request")
-      .flatMap(x => decode_adreq_type_as_string(x))
-      .groupByKey(_._1)
-      .agg(aggregator)
-      
-    val adreq2 = adreq.union(adreq)       
-    val finalresult = adreq2.groupByKey((_._1)).reduceGroups((sum, x) => (sum._1, (sum._2._1 + x._2._1, sum._2._2 + x._2._2))).map(_._2)
-    finalresult
-  }
-  
-  def decode_adreq_type_as_string(data:Data):List[(String, String)] = {
-    val props = data.props
-    val requests = JSON.parseFull(props("requests")).get.asInstanceOf[Map[String, Map[String, Any]]]
-    return genRequestListRddAsString(requests, requests.keys, data)
-  }
-  
-  def genRequestListRddAsString(requests:Map[String, Map[String, Any]], placements:Iterable[String], data: Data):List[(String, String)] = {
-    if(placements.size == 0){
-      List[(String, String)]()
-    }else{
-      val placement = placements.head
-      val places = requests(placement)
-      val request_count = places.values.foldLeft(0){
-        (sum, x) => 
-        val count = x match{
-          case x:Int => x
-          case x:List[Any] => x.size
-          case _ => 0
-        }
-        sum + count
-      }
-      val geo_id = data.geo_id - (data.geo_id % 1000000)
-      val key = data.crystal_id + "|" + geo_id + "|" + placement
-      val value = "req|" + request_count
-      val adreqData = (key, value)
-      adreqData::genRequestListRddAsString(requests, placements.tail, data)
-    }
-  }
-  
-  
-  // End of Benchmark code
   
   def process(){            
      val source_bucket = "/Users/arthurlin/Desktop/aws_s3_files" //TODO: should s3 path
@@ -321,22 +115,20 @@ object Mediation {
        analyze(time, source_bucket, historyDfList)
        index += 1
      }
-
-     
   }
   
   def analyze(current_time:DateTime, source_bucket:String, historyDfList:List[DataFrame]){
-     // 1. take current_time rdd (current time)
-     var currentDf = loadRddByHour(current_time, source_bucket) match{
-       case None => return
-       case Some(r) => r
-     }
-     
-     // 2. substrack history rdd from current time
-     historyDfList.foreach(ds => 
-       currentDf = currentDf.except(ds)
-     )
-     currentDf.cache
+//     // 1. take current_time rdd (current time)
+//     var currentDf = loadRddByHour(current_time, source_bucket) match{
+//       case None => return
+//       case Some(r) => r
+//     }
+//     
+//     // 2. substrack history rdd from current time
+//     historyDfList.foreach(ds => 
+//       currentDf = currentDf.except(ds)
+//     )
+//     currentDf.cache
      
      // 3. combine rdd, app info and price info, create an adreq data and insert it to DB  
 
@@ -350,22 +142,20 @@ object Mediation {
   }
   
   def prepareHistoryDataFrame(start_hour:DateTime, end_hour:DateTime, source_bucket:String):List[DataFrame] = {
-    if(start_hour > end_hour){
-      return List[DataFrame]()
-    }else{
-      val ds = loadRddByHour(start_hour, source_bucket)
-      val next = prepareHistoryDataFrame(start_hour + 1.hour, end_hour, source_bucket)
-      ds match {
-        case Some(d) => d::next
-        case None => next
-      }
-    }
-  }
-  
-  def loadRddByHour(refTime:DateTime, source_bucket:String): Option[DataFrame] = {
-    val path = convertTimeToS3PartitionPath(refTime)
-    val url = source_bucket + "/" + path + "/*.gz"
-    
+//    if(start_hour > end_hour){
+//      return List[DataFrame]()
+//    }else{
+//      val ds = loadRddByHour(start_hour, source_bucket)
+//      val next = prepareHistoryDataFrame(start_hour + 1.hour, end_hour, source_bucket)
+//      ds match {
+//        case Some(d) => d::next
+//        case None => next
+//      }
+//    }
+    return null
+  }  
+
+  def loadDFByHour(url:String): Option[DataFrame] = {    
     println("load url: " + url)
     
     val win = Window.partitionBy("crystal_id", "device_id", "time", "type", "geo_id").orderBy("st") 
@@ -377,7 +167,8 @@ object Mediation {
         .withColumn("st", col("st") * 1000)
         .withColumn("rn", row_number.over(win))
         .where(col("rn") === 1)
-        .drop(col("rn")) 
+        .drop(col("rn"))
+        .withColumn("simple_geo_id", when(col("geo_id") === INVALID_GEO_ID, INVALID_GEO_ID).otherwise(col("geo_id") - col("geo_id") % 1000000 ))
         .cache
       Some(df)
     }catch{
@@ -392,6 +183,103 @@ object Mediation {
   def convertTimeToS3PartitionPath(refTime:DateTime): String = {
     val dateInfo = refTime.toString("Y|MM|dd|HH").split('|')
     s"year=${dateInfo(0)}/month=${dateInfo(1)}/day=${dateInfo(2)}/hour=${dateInfo(3)}"
+  }
+ 
+  def generateAdreqAnalyticResult(data: Dataset[Data]): Dataset[((String, Long, String), (Int, Int))] = {
+    try{  
+      val aggregator = new Aggregator[AdreqData, (Int, Int), (Int, Int)]{
+        def zero: (Int, Int) = (0, 0)
+        def reduce(count:(Int, Int) ,data:AdreqData) = (count._1 + data.request_count, count._2 + data.result_count)
+        def merge(count1:(Int, Int), count2:(Int, Int)) = (count1._1 + count2._1, count1._2 + count2._2)
+        def finish(count:(Int, Int)) = count
+        override def bufferEncoder: Encoder[(Int, Int)] = Encoders.tuple(Encoders.scalaInt, Encoders.scalaInt)
+        override def outputEncoder: Encoder[(Int, Int)] = Encoders.tuple(Encoders.scalaInt, Encoders.scalaInt)
+      }.toColumn
+      
+      val adreq = data
+        .filter(_.event_type == "ad_request")
+        .flatMap(decodeAdreqType)
+        .groupByKey(x => (x.crystal_id, x.geo_id, x.placement))
+        .agg(aggregator)
+      
+      adreq.show()  
+        
+      val adreq2 = adreq.union(adreq)       
+      val finalresult = adreq2.groupByKey((_._1)).reduceGroups((sum, x) => (sum._1, (sum._2._1 + x._2._1, sum._2._2 + x._2._2))).map(_._2)
+      finalresult
+    
+    }catch{
+      case e: Exception => {
+        println(s"generate_adreq_analytic_result error: $e") 
+        return null
+      }     
+    }
+ 
+  }
+  
+  def decodeAdreqType(data:Data):List[AdreqData] = {
+    try{
+      val props = data.props
+      val requests = (Json.parse(props("requests"))).asOpt[Map[String, Map[String, JsValue]]] //.getOrElse( Map("STREAM_C_ROADBLOCK_2" -> Map("1" -> "3"))  )   
+      val results = (Json.parse(props("results"))).asOpt[Map[String, Map[String, JsValue]]] //.getOrElse( Map("STREAM_C_ROADBLOCK_2" -> Map("1" -> "3"))  )   
+      
+      println(requests)
+      println(results)
+      
+      val requestList = requests match{
+        case None => List()
+        case Some(r) => genRequestList(r, 1, r.keys, data)
+      }
+      
+      val resultList = results match{
+        case None => List() 
+        case Some(r) => genRequestList(r, 2, r.keys, data)
+      }    
+      
+      resultList ++ requestList   
+      
+    }catch{
+      case e:Exception => {println(s"data $data can not decode with error: $e")}
+      List()
+    }
+  }
+  
+  // adreqType 1:request, 2:result
+  def genRequestList(adreqs:Map[String, Map[String, JsValue]], adreqType:Int, placements:Iterable[String], data: Data):List[AdreqData] = {
+    if(placements.size == 0){
+      List[AdreqData]()
+    }else{
+      val placement = placements.head
+      val places = adreqs(placement)
+      val validPlaces = if(adreqType == 1) places else places.filter{case (k,v) => k == "1"}
+      val total_count = validPlaces.values.foldLeft(0){
+        (sum, x) => {
+          val value = x.asOpt[List[String]].getOrElse(x.asOpt[String].getOrElse(x.asOpt[Int].getOrElse(x.asOpt[Double].getOrElse(None))))
+          val count = value match{
+            case v:List[Any] => v.size
+            case v:String => safeToInt(v)
+            case v:Int => v
+            case v:Double => v.toInt
+            case _ => 0
+          }
+          sum + count
+        }
+      }
+      val simple_geo_id = data.simple_geo_id
+      val adreqData = adreqType match{
+        case 1 => AdreqData(data.crystal_id, simple_geo_id, placement, total_count, 0)
+        case 2 => AdreqData(data.crystal_id, simple_geo_id, placement, 0, total_count)
+      }
+      adreqData::genRequestList(adreqs, adreqType, placements.tail, data)
+    }
+  }
+  
+  def safeToInt(s: String):Int = {
+    try {
+      s.toInt
+    } catch {
+      case e: NumberFormatException => 0
+    }
   }
   
   def getAppInfo() = {
@@ -429,7 +317,14 @@ object Mediation {
     connection.close()
     price    
   }
-    
+}
+
+object Mediation {
+ 
+  def main(args: Array[String]) {
+    AdreqAnalyzer.start()
+  }
+  
   def timed[T](label: String, code: => T) = {
     println(s"""
       ######################################################################

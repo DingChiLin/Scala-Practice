@@ -10,6 +10,74 @@ class MediationSpec extends FlatSpec with Matchers {
    * {"st":1492646405,"device_id":"1bb98ec719994e99963c6979f2a0dfa9","crystal_id":"169b7928a122421f851bbb6b166d5230","nt":2,"cat":"ADREQ","time":1492646354190,"geo_id":1076000000,"ug":"6","app_version":"5.16.6","sdk_version":30190200,"type":"ad_request","idfa":"de4f5e7d-28a1-4008-af4f-ba15d2e0b9ad","props":{"results":{"SCREEN_SAVER":{"9":1}},"requests":{"SCREEN_SAVER":{"1":["1492646102614"]}},"elapsed_time":300103},"version":18}
    */ 
   
+  /**
+   * decodeAdreqType
+   */
+  
+  "decodeAdreqType" should "return List() when some contents cannot be parsed by JSON" in {
+    val props = Map(
+      "requests" -> """{"foo":{"1":100}}""",
+      "results" -> """[{"foo":{"foo": !!!! CAN NOT PARSE !!!!}}]"""
+    )
+    val data = AdreqAnalyzer.Data("111", "222", "333", 1, 2, 3, 4, props)
+    AdreqAnalyzer.decodeAdreqType(data) shouldBe List()
+  }
+    
+  "decodeAdreqType" should "parse props in Data into List[AdreqData] when requests have list and string" in {
+    val props = Map(
+      "requests" -> """{"place1":{"1":["1492653598864","111","222"], "2":"5"}}""",  // List size: 3 + string to Int: 5
+      "results" -> """{"foo":"bar"}"""
+    )
+    val data = AdreqAnalyzer.Data("111", "222", "333", 1, 2, 3, 4, props)
+    AdreqAnalyzer.decodeAdreqType(data) shouldBe List(AdreqAnalyzer.AdreqData("111", 4, "place1", 8, 0))
+  }
+  
+  "decodeAdreqType" should "parse props in Data into List[AdreqData] when requests have integer and double" in {
+    val props = Map(
+      "requests" -> """{"place1":{"1":2, "2":3.8}}""",  // Int: 2 + Double to Int: 3
+      "results" -> """{"foo":"bar"}"""
+    )
+    val data = AdreqAnalyzer.Data("111", "222", "333", 1, 2, 3, 4, props)
+    AdreqAnalyzer.decodeAdreqType(data) shouldBe List(AdreqAnalyzer.AdreqData("111", 4, "place1", 5, 0))
+  }
+  
+  "decodeAdreqType" should "only parse those results with place equal to 1" in {
+    val props = Map(
+      "requests" -> """{"foo":"bar"}""",  
+      "results" -> """{"place1":{"1":2, "2":3}}""" // count only "1":2
+    )
+    val data = AdreqAnalyzer.Data("111", "222", "333", 1, 2, 3, 4, props)
+    AdreqAnalyzer.decodeAdreqType(data) shouldBe List(AdreqAnalyzer.AdreqData("111", 4, "place1", 0, 2))
+  }
+  
+  "decodeAdreqType" should "parse props in Data into List[AdreqData] when results have string and integer" in {
+    val props = Map(
+      "requests" -> """{"foo":"bar"}""",  
+      "results" -> """{"place1":{"1":"3"}, "place2":{"1":5}}""" // String: 3 & Int: 5
+    )
+    val data = AdreqAnalyzer.Data("111", "222", "333", 1, 2, 3, 4, props)
+    AdreqAnalyzer.decodeAdreqType(data) shouldBe List(AdreqAnalyzer.AdreqData("111", 4, "place1", 0, 3), AdreqAnalyzer.AdreqData("111", 4, "place2", 0, 5))
+  }
+  
+  "decodeAdreqType" should "parse props in Data into List[AdreqData] when there are multiple requests and results" in {
+   val props = Map(
+      "requests" -> """{"place1":{"1":["a","b","c"]}, "place2":{"2":5}, "place3":{"3":"7"}}""",  // List size: 3, Int: 5, String: 7
+      "results" -> """{"place1":{"1":"3"}, "place2":{"1":5}}""" // String: 3 & Int: 5
+    )
+    val data = AdreqAnalyzer.Data("111", "222", "333", 1, 2, 3, 4, props)
+    AdreqAnalyzer.decodeAdreqType(data) shouldBe 
+      List(AdreqAnalyzer.AdreqData("111", 4, "place1", 0, 3), 
+           AdreqAnalyzer.AdreqData("111", 4, "place2", 0, 5),
+           AdreqAnalyzer.AdreqData("111", 4, "place1", 3, 0), 
+           AdreqAnalyzer.AdreqData("111", 4, "place2", 5, 0),
+           AdreqAnalyzer.AdreqData("111", 4, "place3", 7, 0)      
+      )
+  }
+  
+
+  
+  
+  
 //  "prepareDeltaRdd" should """1. filter out row without GENERAL_REQUIRED_KEYS 
 //                              2. generate key value pair by combination of ids 
 //                              3. reduce by keep the one with smaller server_time""" in {
