@@ -1,4 +1,5 @@
 object HelloWorld {
+
   def main(args: Array[String]): Unit = {
     var a = "abcde".take(2)
     println(exec(time()))
