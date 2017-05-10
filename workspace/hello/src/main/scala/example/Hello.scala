@@ -53,6 +53,8 @@ object Hello{
     val ds = data.as[Data]
     ds.cache
     ds.count
+    
+   
 //
 //    val rdd_object = ds.rdd.cache
 //    rdd_object.count
