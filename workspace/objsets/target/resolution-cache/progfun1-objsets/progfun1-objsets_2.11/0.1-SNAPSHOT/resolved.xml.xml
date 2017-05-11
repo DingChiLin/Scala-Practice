@@ -4,7 +4,7 @@
 		module="progfun1-objsets_2.11"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20170510094724"
+		publication="20170511094707"
 	>
 		<description>
 		progfun1-objsets
@@ -32,8 +32,8 @@
 		<artifact name="progfun1-objsets_2.11" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 	</publications>
 	<dependencies>
-		<dependency org="org.scala-lang" name="scala-compiler" rev="2.11.7" conf="scala-tool->default,optional(default)"/>
-		<dependency org="org.scala-lang" name="scala-library" rev="2.11.7" conf="scala-tool->default,optional(default);compile->default(compile)"/>
+		<dependency org="org.scala-lang" name="scala-compiler" rev="2.11.8" conf="scala-tool->default,optional(default)"/>
+		<dependency org="org.scala-lang" name="scala-library" rev="2.11.8" conf="scala-tool->default,optional(default);compile->default(compile)"/>
 		<dependency org="org.scalatest" name="scalatest_2.11" rev="2.2.4" conf="compile->default(compile)"/>
 		<dependency org="junit" name="junit" rev="4.10" conf="test->default(compile)"/>
 		<dependency org="org.scala-lang.modules" name="scala-parser-combinators_2.11" rev="1.0.4" conf="compile->default(compile)"/>
