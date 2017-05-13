@@ -1,5 +1,6 @@
 import scala.collection.mutable._
 import org.scalameter._
+import scala.util.Random
 
 object mutableBenchmark{
   
@@ -12,13 +13,19 @@ object mutableBenchmark{
     val array = appendArray
     val listBuffer = appendListBuffer
     val list = appendList
+    val vector = appendVector
 
     // append
-    timed("Array append", appendArrayBuffer)
+    timed("Array append", appendArray)
     timed("ArrayBuffer append", appendArrayBuffer)
-    timed("List append", appendListBuffer)
-    timed("ListBuffer append", appendList)
+////    timed("List append", appendList)
+    timed("ListBuffer append", appendListBuffer)
+//    timed("Vector append", appendVector)
     timed("List append recursively", recursivelyAppendList())
+    timed("List append recursively reverse", recursivelyAppendList().reverse)
+
+//    timed("Vector append recursively", recursivelyAppendVector())
+
 
 //    // update
 //    timed("Array update", updateArrBuffer(arrBuffer))
@@ -31,6 +38,7 @@ object mutableBenchmark{
     timed("List ++ List", list ++ list)    
     timed("ArrayBuffer ++ ArrayBuffer", arrayBuffer ++ arrayBuffer)
     timed("Array ++ Array", array ++ array)
+    timed("Vector ++ Vector" , vector ++ vector)
     
     val smallList = List[Int](1,2,3)    
     timed("small List ++ large List", smallList ++ list)
@@ -40,25 +48,41 @@ object mutableBenchmark{
     timed("small Array ++ large Array", smallArray ++ array)
     timed("large Array ++ small Array", array ++ smallArray)
     
-    timed("List ++ List ++ List", list ++ list ++ list)
-    timed("List ::: List ::: List", list ::: list ::: list)
+    val smallVector = Vector[Int](1,2,3)
+    timed("small Vector ++ large Vector", smallVector ++ vector)
+    timed("large Vector ++ small Vector", vector ++ smallVector)   
     
+//    timed("List ++ List ++ List", list ++ list ++ list)
+//    timed("List ::: List ::: List", list ::: list ::: list)
+//    
     timed("small List append right", smallList :+ 1) 
     timed("large List append right", list :+ 1)    
     timed("large List append left", 1::list)    
-
+   
     timed("small Array append right", smallArray :+ 1) 
-    timed("large Array append right", array :+ 1)    
+    timed("large Array append right", array :+ 1) 
+    timed("large Array append left", 1 +: array) 
+
+    timed("large Vector append right", vector :+ 1)    
+    timed("large Vector prepend left", 1 +: vector)
+    
+    // Random Access Elements
+//    timed("random access list", randomAccessList(list))
+//    timed("random access array", randomAccessArray(array))
+//    timed("random access vector", randomAccessVector(vector))
+    
+    // sort
+    timed("array sort", array.sorted)
+    timed("list sort", list.sorted)
+    timed("vector sort", vector.sorted)
+    
 
   }
 
   /**
    * Append
    */
-  
    
-
-  // spend 3.0E-6 ms
   def appendArrayBuffer():ArrayBuffer[Int] = {
     val arr = ArrayBuffer[Int]()
     for(i <- 0 until LOOPTIME){
@@ -67,7 +91,6 @@ object mutableBenchmark{
     arr
   }
 
-  // spend 3.7E-3 ms
   def appendArray():Array[Int] = {
     var arr = Array[Int]()
     for(i <- 0 until LOOPTIME){
@@ -76,7 +99,6 @@ object mutableBenchmark{
     arr
   }
 
-  // spend 3.5E-5 ms
   def appendListBuffer():ListBuffer[Int] = {
     val list = ListBuffer[Int]()
     for(i <- 0 until LOOPTIME){
@@ -85,7 +107,6 @@ object mutableBenchmark{
     list
   }
 
-  // spend 0.07 ms
   def appendList():List[Int] = {
     var list = List[Int]()
     for(i <- 0 until LOOPTIME){
@@ -94,11 +115,27 @@ object mutableBenchmark{
     list
   }
   
+  def appendVector():Vector[Int] = {
+     var vector = Vector[Int]()
+     for(i <- 0 until LOOPTIME){
+       vector :+= i
+     }
+     vector
+  }
+  
   def recursivelyAppendList(i:Int = 0, list:List[Int] = List[Int]()): List[Int] = {
     if(i >= LOOPTIME){
       list
     }else{
       recursivelyAppendList(i+1, i::list)
+    }
+  }
+  
+  def recursivelyAppendVector(i:Int = 0, vector:Vector[Int] = Vector[Int]()): Vector[Int] = {
+    if(i >= LOOPTIME){
+      vector
+    }else{
+      recursivelyAppendVector(i+1, i +: vector)
     }
   }
 
@@ -125,9 +162,32 @@ object mutableBenchmark{
       list(i) = i+1
     }
   }
+  
+  /**
+   * random access elements
+   */
+  
+   def randomAccessList(list:List[Int]){
+     val size = list.size
+     for(i <- 0 to size){ 
+       list(Random.nextInt(size))
+     }
+   }
 
-
-
+   def randomAccessArray(array:Array[Int]){
+     val size = array.size
+     for(i <- 0 to size){ 
+       array(Random.nextInt(size))
+     }
+   }
+   
+   def randomAccessVector(vector:Vector[Int]){
+     val size = vector.size
+     for(i <- 0 to size){ 
+       vector(Random.nextInt(size))
+     }
+   }
+  
   /**
    * Easy Benchmark Tool
    */
@@ -140,7 +200,7 @@ object mutableBenchmark{
     } measure {
       code
     }
-    val ROUND = 1000.0
+    val ROUND = 10000.0
     val timeString = time.toString
     val roundtime = (timeString.slice(0, timeString.length-3).toDouble*ROUND).round/ROUND
     println(s"$label spend time: $roundtime")
