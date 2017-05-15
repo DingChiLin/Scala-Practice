@@ -3,8 +3,9 @@ cd $1
 mkdir -p src/main/scala
 cat << EOF > src/main/scala/$1.scala
 object $1{
-def main(args: Array[String]) =
-println("Hi!")
+  def main(args: Array[String]) = {
+    println("Hi!")
+  }
 }
 EOF
 cat << EOF > build.sbt
