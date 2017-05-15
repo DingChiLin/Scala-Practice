@@ -80,6 +80,8 @@ abstract class TweetSet {
    * and be implemented in the subclasses?
    */
   def descendingByRetweet: TweetList
+ 
+  def isEmpty: Boolean
   
   /**
    * The following methods are already implemented
@@ -115,9 +117,11 @@ class Empty extends TweetSet {
   
   def filterAcc(p: Tweet => Boolean, acc: TweetSet): TweetSet = acc
   
-  def mostRetweeted: Tweet = null
+  def mostRetweeted: Tweet = throw(new NoSuchElementException("No tweet in Empty class"))
   
   def descendingByRetweet: TweetList = Nil
+  
+  def isEmpty = true
 
   
   /**
@@ -148,31 +152,34 @@ class NonEmpty(elem: Tweet, left: TweetSet, right: TweetSet) extends TweetSet {
   }
   
   def mostRetweeted: Tweet = {
-    val leftmax = left.mostRetweeted
-    val rightmax = right.mostRetweeted
     
-    if(leftmax == null && rightmax == null){
+    if(left.isEmpty && right.isEmpty){
       elem 
-    }else if(leftmax == null){
+    }else if(left.isEmpty){
+      val rightmax = right.mostRetweeted
       elem maxRetweets rightmax
-    }else if(rightmax == null){      
+    }else if(right.isEmpty){     
+      val leftmax = left.mostRetweeted
       elem maxRetweets leftmax
     }else{      
+      val rightmax = right.mostRetweeted
+      val leftmax = left.mostRetweeted
       (elem maxRetweets leftmax) maxRetweets rightmax
     }
   }
   
   def descendingByRetweet: TweetList = {
-    val maxTweet = this.mostRetweeted
-    val tailTweetSet = this.remove(maxTweet)
-    if(maxTweet == null){
+    if(this.isEmpty){
       Nil
     }else{
+      val maxTweet = this.mostRetweeted
+      val tailTweetSet = this.remove(maxTweet)
       new Cons(maxTweet, tailTweetSet.descendingByRetweet)
     }
   }
 
-    
+  def isEmpty = false
+
   /**
    * The following methods are already implemented
    */
