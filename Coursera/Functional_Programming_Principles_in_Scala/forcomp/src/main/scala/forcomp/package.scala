@@ -1,5 +1,5 @@
 package object forcomp {
-  val dictionaryPath = List("forcomp", "linuxwords.txt")
+  val dictionaryPath = List("/forcomp", "linuxwords.txt")
 
   def loadDictionary = {
     val wordstream = Option {
