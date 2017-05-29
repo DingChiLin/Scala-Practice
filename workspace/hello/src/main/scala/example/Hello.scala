@@ -45,7 +45,7 @@ object Hello{
     println("Hello") 
     val source_bucket = "/Users/arthurlin/Desktop/aws_s3_files" 
 //    val source_bucket = "s3://ce-production-raw-event-logs/ADREQ"
-    val current_time = "year=2017/month=04/day=20/hour=00" //new DateTime("2017-04-20T00:34:56").minute(0).second(0) //TODO:should be today
+    val current_time = "year=2017/month=05/day=17/hour=30" //new DateTime("2017-04-20T00:34:56").minute(0).second(0) //TODO:should be today
     
     val data = loadDFByHour(spark, current_time, source_bucket).get
     data.show()
@@ -60,9 +60,9 @@ object Hello{
 //    rdd_object.count
 ////    bench("final result rdd using object", generate_adreq_analytic_result_rdd(rdd_object).count, 2)
 //    
-    val rdd = ds.rdd.map(x => convert_to_pure_string(x)).cache // convert to pure string to do benchmark
-    rdd.count
-    bench("final result rdd using string", generate_adreq_analytic_result_rdd_string(rdd).count, 2)
+//    val rdd = ds.rdd.map(x => convert_to_pure_string(x)).cache // convert to pure string to do benchmark
+//    rdd.count
+//    bench("final result rdd using string", generate_adreq_analytic_result_rdd_string(rdd).count, 2)
 //
 //    
     bench("final result ds using object", generate_adreq_analytic_result(spark, ds).count, 2)
