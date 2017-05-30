@@ -120,8 +120,7 @@ object Anagrams {
    */
   def subtract(x: Occurrences, y: Occurrences): Occurrences = {
     y.foldLeft(x.toMap){(sum, element) => 
-      val char = element._1
-      val count = element._2
+      val (char, count) = element
       sum.updated(char, sum(char) - count)
     }.toList.filter(_._2 != 0).sortBy(_._1)
   }
@@ -182,19 +181,19 @@ object Anagrams {
       !m2.exists{case (k,v) => m1.get(k) == None || m1(k) < v}
     }
     
-    def findAnagrams(l:Occurrences, k:List[(Word, Occurrences)]): List[List[Word]] = {
+    def findAnagrams(l:Occurrences): List[List[Word]] = {
       if(l.isEmpty){
         List(Nil)
-      }else if(!k.exists(w => occurrenceContain(l, w._2))){  
+      }else if(!validSubWords.exists(w => occurrenceContain(l, w._2))){  
         Nil
       }else{
-        k.filter(w => occurrenceContain(l, w._2)).flatMap{w => 
-          findAnagrams(subtract(l, w._2), k).map(l => w._1::l)
+        validSubWords.filter(w => occurrenceContain(l, w._2)).flatMap{w => 
+          findAnagrams(subtract(l, w._2)).map(l => w._1::l)
         }
       } 
     }
     
-    findAnagrams(occurences, validSubWords)
+    findAnagrams(occurences)
   }
 }
 
