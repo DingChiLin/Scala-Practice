@@ -92,19 +92,22 @@ object Anagrams {
    *  Note that the order of the occurrence list subsets does not matter -- the subsets
    *  in the example above could have been displayed in some other order.
    */
-  def combinations(occurrences: Occurrences): List[Occurrences] = {
-    def cross(xs: List[Occurrences], ys: List[Occurrences]): List[Occurrences] = {
-      xs.flatMap(x => ys.map(y => x ++ y))
-    }
-    
+   def combinations(occurrences: Occurrences): List[Occurrences] = {
     if(occurrences.isEmpty){
-      List(Nil)
+      List(List())
     }else{
-      val subsetOfEachWords = occurrences.map(x => 
-        Nil::List.range(1, x._2 + 1, 1).map(count => List((x._1, count)))
-      )       
-      val crossSubsets = subsetOfEachWords.tail.foldLeft(subsetOfEachWords.head){(sum, wordSubsets) => cross(sum, wordSubsets)}    
-      subsetOfEachWords.foldLeft(crossSubsets){(sum, occ) => sum ++ occ}.distinct
+      val (word, count) = occurrences.head
+      val subCombs = combinations(occurrences.tail)
+      val allComnbs = for{
+        c <- 0 to count
+      } yield subCombs.map(comb => 
+        if(c == 0)
+          List():::comb
+        else{
+          List((word, c)):::comb
+        }
+      )
+      allComnbs.toList.flatten
     }
   }
 
@@ -206,7 +209,7 @@ object Main extends App{
 //  println(Anagrams.dictionaryByOccurrences.filter{case (k,v) => v.length > 1})  
   
 //  val occurance = List(('a',2), ('b',2), ('c',3))
-//  println(Anagrams.combinations(Nil))
+//  println(Anagrams.combinations(occurance))
 //  val occurance2 = List(('a',2), ('c',1))
 //  println(Anagrams.subtract(occurance, occurance2))  
 //  
