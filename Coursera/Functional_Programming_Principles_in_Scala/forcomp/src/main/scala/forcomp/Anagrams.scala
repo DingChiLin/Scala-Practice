@@ -123,7 +123,7 @@ object Anagrams {
       val char = element._1
       val count = element._2
       sum.updated(char, sum(char) - count)
-    }.toList.filter(_._2 != 0)
+    }.toList.filter(_._2 != 0).sortBy(_._1)
   }
 
   /** Returns a list of all anagram sentences of the given sentence.
@@ -179,21 +179,17 @@ object Anagrams {
     def occurrenceContain(occ1:Occurrences, occ2:Occurrences):Boolean = {
       val m1 = occ1.toMap
       val m2 = occ2.toMap   
-      var result = true
-      m2.foreach{case (k,v) => 
-        if(m1.get(k) == None || m1(k) < v) result = false
-      }
-      result
+      !m2.exists{case (k,v) => m1.get(k) == None || m1(k) < v}
     }
     
-    def findAnagrams(l:Occurrences, k:List[(Word, Occurrences)], w:(Word, Occurrences)=null): List[List[Word]] = {
+    def findAnagrams(l:Occurrences, k:List[(Word, Occurrences)]): List[List[Word]] = {
       if(l.isEmpty){
         List(Nil)
-      }else if(!k.exists(x => occurrenceContain(l,x._2))){  
+      }else if(!k.exists(w => occurrenceContain(l, w._2))){  
         Nil
       }else{
-        k.filter(r => occurrenceContain(l, r._2)).flatMap{x => 
-          findAnagrams(subtract(l, x._2), k, x).map(l => x._1::l)
+        k.filter(w => occurrenceContain(l, w._2)).flatMap{w => 
+          findAnagrams(subtract(l, w._2), k).map(l => w._1::l)
         }
       } 
     }
