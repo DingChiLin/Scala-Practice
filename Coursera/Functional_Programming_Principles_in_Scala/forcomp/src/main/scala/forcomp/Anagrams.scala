@@ -97,17 +97,11 @@ object Anagrams {
       List(List())
     }else{
       val (word, count) = occurrences.head
-      val subCombs = combinations(occurrences.tail)
       val allComnbs = for{
+        comb <- combinations(occurrences.tail)
         c <- 0 to count
-      } yield subCombs.map(comb => 
-        if(c == 0)
-          List():::comb
-        else{
-          List((word, c)):::comb
-        }
-      )
-      allComnbs.toList.flatten
+      } yield if(c != 0) List((word, c)):::comb else List():::comb
+      allComnbs
     }
   }
 
