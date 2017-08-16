@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Vendor: com.storm-enroute
+Implementation-Title: scalameter-core
+Implementation-Version: 0.6
+Implementation-Vendor-Id: com.storm-enroute
+Specification-Vendor: com.storm-enroute
+Specification-Title: scalameter-core
+Specification-Version: 0.6
+

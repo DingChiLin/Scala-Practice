@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="SBT: com.amazonaws.scala:aws-scala-sdk-cloudwatch:1.10.7:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.amazonaws.scala/aws-scala-sdk-cloudwatch/jars/aws-scala-sdk-cloudwatch-1.10.7.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.amazonaws.scala/aws-scala-sdk-cloudwatch/srcs/aws-scala-sdk-cloudwatch-1.10.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

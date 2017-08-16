@@ -1,0 +1,489 @@
+format version: 5
+output mode:
+1 items
+0 -> single
+output directories:
+1 items
+output dir -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/target/scala-2.11/classes
+compile options:
+0 items
+javac options:
+0 items
+compiler version:
+1 items
+0 -> 2.11.8
+compile order:
+1 items
+0 -> Mixed
+name hashing:
+1 items
+0 -> true
+products:
+17 items
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/target/scala-2.11/classes/ConfigParser$$anon$1$$anonfun$1.class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/target/scala-2.11/classes/ConfigParser$$anon$1$$anonfun$2.class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/target/scala-2.11/classes/ConfigParser$$anon$1$$anonfun$3.class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/target/scala-2.11/classes/ConfigParser$$anon$1$$anonfun$4.class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/target/scala-2.11/classes/ConfigParser$$anon$1$$anonfun$5.class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/target/scala-2.11/classes/ConfigParser$$anon$1$$anonfun$6.class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/target/scala-2.11/classes/ConfigParser$$anon$1$$anonfun$7.class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/target/scala-2.11/classes/ConfigParser$$anon$1.class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/target/scala-2.11/classes/ConfigParser$Argument$.class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/target/scala-2.11/classes/ConfigParser$Argument.class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/target/scala-2.11/classes/ConfigParser$class.class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/target/scala-2.11/classes/ConfigParser.class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/target/scala-2.11/classes/Data$.class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/target/scala-2.11/classes/Data.class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/target/scala-2.11/classes/Partition$.class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/target/scala-2.11/classes/Partition.class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> /Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/target/scala-2.11/classes/PartitionCreator.class
+binary dependencies:
+12 items
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/rt.jar
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> /Users/arthurlin/.ivy2/cache/com.amazonaws/aws-java-sdk-cloudwatch/jars/aws-java-sdk-cloudwatch-1.10.7.jar
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> /Users/arthurlin/.ivy2/cache/com.amazonaws/aws-java-sdk-core/jars/aws-java-sdk-core-1.10.7.jar
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> /Users/arthurlin/.ivy2/cache/com.amazonaws/aws-java-sdk/jars/aws-java-sdk-1.7.4.jar
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> /Users/arthurlin/.ivy2/cache/com.github.nscala-time/nscala-time_2.11/jars/nscala-time_2.11-2.16.0.jar
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> /Users/arthurlin/.ivy2/cache/com.github.scopt/scopt_2.11/jars/scopt_2.11-3.5.0.jar
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> /Users/arthurlin/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.4.0-M3.jar
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> /Users/arthurlin/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.9.9.jar
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> /Users/arthurlin/.ivy2/cache/org.apache.spark/spark-catalyst_2.11/jars/spark-catalyst_2.11-2.1.0.jar
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> /Users/arthurlin/.ivy2/cache/org.apache.spark/spark-core_2.11/jars/spark-core_2.11-2.1.0.jar
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> /Users/arthurlin/.ivy2/cache/org.apache.spark/spark-sql_2.11/jars/spark-sql_2.11-2.1.0.jar
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> /Users/arthurlin/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar
+direct source dependencies:
+0 items
+direct external dependencies:
+0 items
+public inherited source dependencies:
+0 items
+public inherited external dependencies:
+0 items
+member reference internal dependencies:
+0 items
+member reference external dependencies:
+0 items
+inheritance internal dependencies:
+0 items
+inheritance external dependencies:
+0 items
+class names:
+17 items
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> ConfigParser
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> ConfigParser$$anon$1
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> ConfigParser$$anon$1$$anonfun$1
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> ConfigParser$$anon$1$$anonfun$2
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> ConfigParser$$anon$1$$anonfun$3
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> ConfigParser$$anon$1$$anonfun$4
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> ConfigParser$$anon$1$$anonfun$5
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> ConfigParser$$anon$1$$anonfun$6
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> ConfigParser$$anon$1$$anonfun$7
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> ConfigParser$Argument
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> ConfigParser$Argument$
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> ConfigParser$class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> Data
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> Data$
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> Partition
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> Partition$
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> PartitionCreator
+used names:
+330 items
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> $anon
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> &&
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> +
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> -
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> ->
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> <
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> <init>
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> <repeated>
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> ==
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> >
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> ?0
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> A
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> ACTIVE_HOUR
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> AbstractFunction7
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> AbstractFunction8
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> AmazonCloudWatchClient
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> AmazonS3Client
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> Any
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> AnyRef
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> Argument
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> Array
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> ArrayOps
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> ArrowAssoc
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> B
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> BasicAWSCredentials
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> Boolean
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> BufferedSource
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> Builder
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> CONFIG
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> Char
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> Class
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> ClassTag
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> Codec
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> ConfigParser
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> Data
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> DataFrame
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> DataFrameReader
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> DataFrameWriter
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> DataType
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> Date
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> DateTime
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> DateTimeFormat
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> DateTimeFormatter
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> DriverManager
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> DurationBuilder
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> ENDTIME
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> FileInputStream
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> Function2
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> GENERAL_REQUIRED_KEYS
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> GetObjectRequest
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> INVALID_GEO_ID
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> Imports
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> IndexOutOfBoundsException
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> InputStream
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> Int
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> IntegerType
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> Interval
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> Iterator
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> JavaConverters
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> JsValue
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> Json
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> List
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> Long
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> LongType
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> MINIMUM_DELAY
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> Map
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> MapType
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> Metadata
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> None
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> Nothing
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> Object
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> Option
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> OptionDef
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> OptionParser
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> PARTITION_SIZE
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> Partition
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> PartitionCreator
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> Period
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> Predef
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> Product
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> Property
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> Read
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> ReadableInstant
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> ReadablePeriod
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> Reads
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> RichDateTime
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> RichDateTimeProperty
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> RichInt
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> RichReadableInstant
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> Row
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> S3BUCKET
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> S3Object
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> S3ObjectInputStream
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> SQLContext
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> ScalaRunTime
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> Seq
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> Serializable
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> Some
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> Source
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> SparkConf
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> SparkContext
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> SparkSession
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> StaticDateTime
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> StaticDateTimeFormat
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> Statics
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> String
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> StringContext
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> StringOps
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> StringReads
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> StringType
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> StructField
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> StructType
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> T
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> T0
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> T1
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> T2
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> T3
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> T4
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> T5
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> T6
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> T7
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> T8
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> Tuple2
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> Tuple7
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> Tuple8
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> URL
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> Unit
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> Window
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> WrappedArray
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> \
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> _$1
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> _$7
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> _toString
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> action
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> activeHour
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> amazonaws
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> analyzer
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> anyHash
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> apache
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> api
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> appName
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> apply
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> args
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> argument
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> as
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> asInstanceOf
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> augmentString
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> auth
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> aws
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> booleanRead
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> bucket
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> buildSchema
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> builder
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> c
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> cloudWatch
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> cloudwatch
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> collection
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> com
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> config
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> configEndTime
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> configStartTime
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> configString
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> convertTimeToS3PartitionPath
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> convertTimeToS3PartitionPath2
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> country_geo_id
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> crystal_id
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> dateInfo
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> db
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> device_id
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> df
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> effectiveTimeNow
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> endTime
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> eq
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> event_type
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> expressions
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> fallbackSystemCodec
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> filePath
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> finalizeHash
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> finishTime
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> forPattern
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> fromInputStream
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> functions
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> geo_id
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> get
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> getClass
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> getEndTime
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> getLines
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> getObject
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> getObjectContent
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> getOrCreate
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> getPath
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> getResource
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> getTimeShift
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> github
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> head
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> host
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> hour
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> hours
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> immutable
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> implicits
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> intRead
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> io
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> isInstanceOf
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> isLocal
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> java
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> json
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> libs
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> longHash
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> loop
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> materializeClassTag
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> millis
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> minute
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> minutes
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> mix
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> mkString
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> model
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> mysql
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> now
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> nscala_time
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> opt
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> option
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> org
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> package
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> parse
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> parseConfig
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> parseDateTime
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> parser
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> path
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> play
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> println
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> process
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> props
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> read
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> refArrayOps
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> refTime
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> registerKryoClasses
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> richDateTime
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> richDateTimeProperty
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> richInt
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> richReadableInstant
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> runtime
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> s
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> s3
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> s3Client
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> s3Object
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> scala
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> scalameter
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> schema
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> scopt
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> second
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> services
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> set
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> setLogLevel
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> sourceBucket
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> spark
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> sparkConf
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> sparkContext
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> split
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> sql
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> sqlContext
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> st
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> startHour
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> startTime
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> stringRead
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> sys
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> table
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> testBucket1
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> testBucket2
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> testUrl1
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> testUrl2
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> text
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> time
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> timeShift
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> to
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> toBoolean
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> toInt
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> toList
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> toPeriod
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> toString
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> typedProductIterator
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> types
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> url
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> util
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> wrapRefArray
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> write
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> x
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> x$1
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> x$10
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> x$11
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> x$12
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> x$13
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> x$14
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> x$15
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> x$16
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> x$17
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> x$18
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> x$19
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> x$2
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> x$20
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> x$21
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> x$22
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> x$23
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> x$24
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> x$25
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> x$26
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> x$27
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> x$28
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> x$29
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> x$3
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> x$30
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> x$31
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> x$32
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> x$33
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> x$34
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> x$35
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> x$36
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> x$37
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> x$38
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> x$39
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> x$4
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> x$40
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> x$41
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> x$42
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> x$5
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> x$6
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> x$7
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> x$8
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> x$9
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> year
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> ||
+product stamps:
+17 items
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/target/scala-2.11/classes/ConfigParser$$anon$1$$anonfun$1.class -> lastModified(1498637646000)
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/target/scala-2.11/classes/ConfigParser$$anon$1$$anonfun$2.class -> lastModified(1498637646000)
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/target/scala-2.11/classes/ConfigParser$$anon$1$$anonfun$3.class -> lastModified(1498637646000)
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/target/scala-2.11/classes/ConfigParser$$anon$1$$anonfun$4.class -> lastModified(1498637646000)
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/target/scala-2.11/classes/ConfigParser$$anon$1$$anonfun$5.class -> lastModified(1498637646000)
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/target/scala-2.11/classes/ConfigParser$$anon$1$$anonfun$6.class -> lastModified(1498637646000)
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/target/scala-2.11/classes/ConfigParser$$anon$1$$anonfun$7.class -> lastModified(1498637646000)
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/target/scala-2.11/classes/ConfigParser$$anon$1.class -> lastModified(1498637646000)
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/target/scala-2.11/classes/ConfigParser$Argument$.class -> lastModified(1498637646000)
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/target/scala-2.11/classes/ConfigParser$Argument.class -> lastModified(1498637646000)
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/target/scala-2.11/classes/ConfigParser$class.class -> lastModified(1498637646000)
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/target/scala-2.11/classes/ConfigParser.class -> lastModified(1498637646000)
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/target/scala-2.11/classes/Data$.class -> lastModified(1498637646000)
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/target/scala-2.11/classes/Data.class -> lastModified(1498637646000)
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/target/scala-2.11/classes/Partition$.class -> lastModified(1498637646000)
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/target/scala-2.11/classes/Partition.class -> lastModified(1498637646000)
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/target/scala-2.11/classes/PartitionCreator.class -> lastModified(1498637646000)
+source stamps:
+1 items
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> hash(6bc87229c589eb14b0b8ead7fa6d5060bbab8d74)
+binary stamps:
+12 items
+/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/rt.jar -> lastModified(1489567893000)
+/Users/arthurlin/.ivy2/cache/com.amazonaws/aws-java-sdk-cloudwatch/jars/aws-java-sdk-cloudwatch-1.10.7.jar -> lastModified(1438126631000)
+/Users/arthurlin/.ivy2/cache/com.amazonaws/aws-java-sdk-core/jars/aws-java-sdk-core-1.10.7.jar -> lastModified(1438126841000)
+/Users/arthurlin/.ivy2/cache/com.amazonaws/aws-java-sdk/jars/aws-java-sdk-1.7.4.jar -> lastModified(1395339077000)
+/Users/arthurlin/.ivy2/cache/com.github.nscala-time/nscala-time_2.11/jars/nscala-time_2.11-2.16.0.jar -> lastModified(1482544991000)
+/Users/arthurlin/.ivy2/cache/com.github.scopt/scopt_2.11/jars/scopt_2.11-3.5.0.jar -> lastModified(1465689956000)
+/Users/arthurlin/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.4.0-M3.jar -> lastModified(1425966977000)
+/Users/arthurlin/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.9.9.jar -> lastModified(1490275991000)
+/Users/arthurlin/.ivy2/cache/org.apache.spark/spark-catalyst_2.11/jars/spark-catalyst_2.11-2.1.0.jar -> lastModified(1481872148000)
+/Users/arthurlin/.ivy2/cache/org.apache.spark/spark-core_2.11/jars/spark-core_2.11-2.1.0.jar -> lastModified(1481871925000)
+/Users/arthurlin/.ivy2/cache/org.apache.spark/spark-sql_2.11/jars/spark-sql_2.11-2.1.0.jar -> lastModified(1481872304000)
+/Users/arthurlin/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar -> lastModified(1457105192000)
+class names:
+12 items
+/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/rt.jar -> java.lang.Object
+/Users/arthurlin/.ivy2/cache/com.amazonaws/aws-java-sdk-cloudwatch/jars/aws-java-sdk-cloudwatch-1.10.7.jar -> com.amazonaws.services.cloudwatch.AmazonCloudWatchClient
+/Users/arthurlin/.ivy2/cache/com.amazonaws/aws-java-sdk-core/jars/aws-java-sdk-core-1.10.7.jar -> com.amazonaws.auth.BasicAWSCredentials
+/Users/arthurlin/.ivy2/cache/com.amazonaws/aws-java-sdk/jars/aws-java-sdk-1.7.4.jar -> com.amazonaws.services.s3.AmazonS3Client
+/Users/arthurlin/.ivy2/cache/com.github.nscala-time/nscala-time_2.11/jars/nscala-time_2.11-2.16.0.jar -> com.github.nscala_time.time.StaticDateTime$
+/Users/arthurlin/.ivy2/cache/com.github.scopt/scopt_2.11/jars/scopt_2.11-3.5.0.jar -> scopt.OptionParser
+/Users/arthurlin/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.4.0-M3.jar -> play.api.libs.json.DefaultReads
+/Users/arthurlin/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.9.9.jar -> org.joda.time.DateTime
+/Users/arthurlin/.ivy2/cache/org.apache.spark/spark-catalyst_2.11/jars/spark-catalyst_2.11-2.1.0.jar -> org.apache.spark.sql.types.DataType
+/Users/arthurlin/.ivy2/cache/org.apache.spark/spark-core_2.11/jars/spark-core_2.11-2.1.0.jar -> org.apache.spark.SparkConf$
+/Users/arthurlin/.ivy2/cache/org.apache.spark/spark-sql_2.11/jars/spark-sql_2.11-2.1.0.jar -> org.apache.spark.sql.SparkSession$
+/Users/arthurlin/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar -> scala.runtime.AbstractFunction8
+internal apis:
+1 items
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlSjH5SdlLSkQCAAdJAAdhcGlIYXNoWgAIaGFzTWFjcm9aABBoYXNQYWNrYWdlT2JqZWN0TAAYX2ludGVybmFsT25seV9uYW1lSGFzaGVzdAAkTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoZXM7TAADYXBpdAAVTHhzYnRpL2FwaS9Tb3VyY2VBUEk7TAALY29tcGlsYXRpb250ABdMeHNidGkvYXBpL0NvbXBpbGF0aW9uO1sABGhhc2h0AAJbQnhwJpZHpgAAc3IAInhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoZXNU2r6Z+tTsTAIAAlsAD2ltcGxpY2l0TWVtYmVyc3QAI1tMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2g7WwAOcmVndWxhck1lbWJlcnNxAH4AB3hwdXIAI1tMeHNidGkuYXBpLl9pbnRlcm5hbE9ubHlfTmFtZUhhc2g7SVqAtt2Wi/QCAAB4cAAAAAB1cQB+AAkAAABgc3IAIHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoWw71InY4V88CAAJJAARoYXNoTAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwLDyIkHQAEmlzRXhjZWVkQWN0aXZlSG91cnNxAH4ADFlPcy10AA9pc0V4Y2VlZEVuZFRpbWVzcQB+AAxWElFFdAAGbm90aWZ5c3EAfgAMbkCcvHQAB3VuYXBwbHlzcQB+AAz1rt+/dAACc3RzcQB+AAzle+26dAAHaXNMb2NhbHNxAH4ADCsgJxx0AAdjdXJyaWVkc3EAfgAMGo1hRnQACEFyZ3VtZW50c3EAfgAM0ZjRZXQACWRldmljZV9pZHNxAH4ADP/DBOR0ABVHRU5FUkFMX1JFUVVJUkVEX0tFWVNzcQB+AAxaBCBOdAAEd2FpdHNxAH4ADATok0d0AA9hcHBseSRkZWZhdWx0JDRzcQB+AAzOtOYmdAAQPGluaXQ+JGRlZmF1bHQkNXNxAH4ADI5CCzt0AAlzdGFydFRpbWVzcQB+AAxmJSkIdAAOY29weSRkZWZhdWx0JDJzcQB+AAwiv1Y6dAANJGFzSW5zdGFuY2VPZnNxAH4ADCCSU610ABA8aW5pdD4kZGVmYXVsdCQ2c3EAfgAMowUK1HQADmNvcHkkZGVmYXVsdCQ1c3EAfgAMLi2ZWXQAEDxpbml0PiRkZWZhdWx0JDFzcQB+AAxYhZEcdAAMcHJvZHVjdEFyaXR5c3EAfgAMvjI1VHQABmVxdWFsc3NxAH4ADEzvL9t0AAtidWlsZFNjaGVtYXNxAH4ADFOIPAl0AAdwcm9jZXNzc3EAfgAMDy+TOXQADGdldFRpbWVTaGlmdHNxAH4ADCEdnHB0AAxhc0luc3RhbmNlT2ZzcQB+AAzc4eOxdAAGcGFyc2Vyc3EAfgAM0K5fPXQAD2FwcGx5JGRlZmF1bHQkN3NxAH4ADN77Gop0ABxjb252ZXJ0VGltZVRvUzNQYXJ0aXRpb25QYXRoc3EAfgAMS+EGtnQADHN5bmNocm9uaXplZHNxAH4ADGbZAm50AAxDb25maWdQYXJzZXJzcQB+AAzzMedqdAAQPGluaXQ+JGRlZmF1bHQkN3NxAH4ADOuGYP90AA0kaXNJbnN0YW5jZU9mc3EAfgAMAHu9XnQAEGVmZmVjdGl2ZVRpbWVOb3dzcQB+AAygoSA6dAAPYXBwbHkkZGVmYXVsdCQzc3EAfgAMNXi5Z3QAEDxpbml0PiRkZWZhdWx0JDRzcQB+AAzDRdb3dAAOY29weSRkZWZhdWx0JDhzcQB+AAzAd7ogdAAGdHVwbGVkc3EAfgAMTPIx5nQAHWNvbnZlcnRUaW1lVG9TM1BhcnRpdGlvblBhdGgyc3EAfgAMeFmPT3QADmNvdW50cnlfZ2VvX2lkc3EAfgAMCzwkxHQACmdldEVuZFRpbWVzcQB+AAw/csOJdAAIY2FuRXF1YWxzcQB+AAzsWhyUdAAOY29weSRkZWZhdWx0JDRzcQB+AAxs4m7wdAAEbWFpbnNxAH4ADLYylaF0AA1wcm9kdWN0UHJlZml4c3EAfgAM/8/P+nQACW5vdGlmeUFsbHNxAH4ADIe8CbF0AAhTM0JVQ0tFVHNxAH4ADOZWCh50AAxpc0luc3RhbmNlT2ZzcQB+AAz06SHadAALcGFyc2VDb25maWdzcQB+AAyBubMPdAAOUEFSVElUSU9OX1NJWkVzcQB+AAzxsinMdAAPYXBwbHkkZGVmYXVsdCQ2c3EAfgAMlEl11HQAEDxpbml0PiRkZWZhdWx0JDNzcQB+AAytdm/sdAAHZW5kVGltZXNxAH4ADJEMKI50AA1NSU5JTVVNX0RFTEFZc3EAfgAMv7C893QADklOVkFMSURfR0VPX0lEc3EAfgAMOnwq13QABjxpbml0PnNxAH4ADETpLiB0AAlzcGFya0NvbmZzcQB+AAwE4/1JdAAPYXBwbHkkZGVmYXVsdCQyc3EAfgAM78ehznQABWFwcGx5c3EAfgAMuakYrHQABXNwYXJrc3EAfgAMzUHh3nQABXBhcnNlc3EAfgAMNBFFcHQAAj09c3EAfgAMwJDW+3QABmdlb19pZHNxAH4ADPPXl1N0AApldmVudF90eXBlc3EAfgAMtmzLK3QABWNsb25lc3EAfgAMoB2A5XQAEFBhcnRpdGlvbkNyZWF0b3JzcQB+AAwc8PmPdAAIZmlsZVBhdGhzcQB+AAx9ZwH5dAAOY29weSRkZWZhdWx0JDdzcQB+AAzarxTSdAAJdGltZVNoaWZ0c3EAfgAMeBGJjHQABiRpbml0JHNxAH4ADJlRluV0AAlQYXJ0aXRpb25zcQB+AAw8b/RkdAAGYnVja2V0c3EAfgAM40zbXnQAB0VORFRJTUVzcQB+AAweSg+AdAAOY29weSRkZWZhdWx0JDNzcQB+AAytK64bdAAEY29weXNxAH4ADNQVjKN0AA9hcHBseSRkZWZhdWx0JDFzcQB+AAxV+4CodAAIdG9TdHJpbmdzcQB+AAwk90CldAACIT1zcQB+AAz1+rDBdAAPYXBwbHkkZGVmYXVsdCQ1c3EAfgAMrmutkHQABHRpbWVzcQB+AAxQcWKsdAAIZ2V0Q2xhc3NzcQB+AAzREmO2dAAOY29weSRkZWZhdWx0JDFzcQB+AAxqk7LPdAAFcHJvcHNzcQB+AAx7ZF1RdAAKYWN0aXZlSG91cnNxAH4ADNj6nbx0AA5jb3B5JGRlZmF1bHQkNnNxAH4ADBN2Zfx0AAJuZXNxAH4ADMukWvd0AAREYXRhc3EAfgAMbQ//9nQAEDxpbml0PiRkZWZhdWx0JDJzcQB+AAy8yPkLdAACZXFzcQB+AAyXn6SJdAALQUNUSVZFX0hPVVJzcQB+AAxmNw8edAAPcHJvZHVjdEl0ZXJhdG9yc3EAfgAMymn/wnQAAiMjc3EAfgAMJrl3cnQACmNyeXN0YWxfaWRzcQB+AAyYbDcYdAAIZmluYWxpemVzcQB+AAwPyyvGdAAFdGFibGVzcQB+AAyvOCOCdAAOcHJvZHVjdEVsZW1lbnRzcQB+AAy6p/F1dAAIaGFzaENvZGVzcgATeHNidGkuYXBpLlNvdXJjZUFQSblep/kpIzikAgACWwALZGVmaW5pdGlvbnN0ABdbTHhzYnRpL2FwaS9EZWZpbml0aW9uO1sACHBhY2thZ2VzdAAUW0x4c2J0aS9hcGkvUGFja2FnZTt4cHVyABdbTHhzYnRpLmFwaS5EZWZpbml0aW9uO4jJXOe0414OAgAAeHAAAAAEc3IAE3hzYnRpLmFwaS5DbGFzc0xpa2WDNByh37CXbAIABEwADmRlZmluaXRpb25UeXBldAAaTHhzYnRpL2FwaS9EZWZpbml0aW9uVHlwZTtbABBzYXZlZEFubm90YXRpb25zdAATW0xqYXZhL2xhbmcvU3RyaW5nO0wACHNlbGZUeXBldAAQTHhzYnRpL2FwaS9MYXp5O0wACXN0cnVjdHVyZXEAfgDXeHIAIXhzYnRpLmFwaS5QYXJhbWV0ZXJpemVkRGVmaW5pdGlvbvkRbrHVUDziAgABWwAOdHlwZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9UeXBlUGFyYW1ldGVyO3hyABR4c2J0aS5hcGkuRGVmaW5pdGlvbocqG+hxQuNGAgAETAAGYWNjZXNzdAASTHhzYnRpL2FwaS9BY2Nlc3M7WwALYW5ub3RhdGlvbnN0ABdbTHhzYnRpL2FwaS9Bbm5vdGF0aW9uO0wACW1vZGlmaWVyc3QAFUx4c2J0aS9hcGkvTW9kaWZpZXJzO0wABG5hbWVxAH4ADXhwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnOX52HcEyZ7swIAAUIABWZsYWdzeHABcQB+AEl1cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAVUcmFpdHVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAABzcgAheHNidGkuYXBpLkFic3RyYWN0TGF6eSRTdHJpY3RMYXp5DWYcaykWKrgCAAFMAAV2YWx1ZXQAEkxqYXZhL2xhbmcvT2JqZWN0O3hwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4A7nNyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgDXTAAJaW5oZXJpdGVkcQB+ANdMAAdwYXJlbnRzcQB+ANd4cQB+APNzcQB+AO51cQB+ANIAAAAAc3EAfgDudXEAfgDSAAAAAHNxAH4A7nVyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAACc3IAFHhzYnRpLmFwaS5Qcm9qZWN0aW9u89KNVOlFpC0CAAJMAAJpZHEAfgANTAAGcHJlZml4dAAWTHhzYnRpL2FwaS9TaW1wbGVUeXBlO3hxAH4A8nQABk9iamVjdHNyABN4c2J0aS5hcGkuU2luZ2xldG9u/Kdf+M9W5EYCAAFMAARwYXRodAAQTHhzYnRpL2FwaS9QYXRoO3hxAH4A8nNyAA54c2J0aS5hcGkuUGF0aJs9XAjOpSeEAgABWwAKY29tcG9uZW50c3QAGltMeHNidGkvYXBpL1BhdGhDb21wb25lbnQ7eHB1cgAaW0x4c2J0aS5hcGkuUGF0aENvbXBvbmVudDtD2gl0LWcWdAIAAHhwAAAAA3NyAAx4c2J0aS5hcGkuSWSYMmyLN1PEQAIAAUwAAmlkcQB+AA14cgAXeHNidGkuYXBpLlBhdGhDb21wb25lbnRfmiJbLoafvAIAAHhwdAAEamF2YXNxAH4BC3QABGxhbmdzcgAOeHNidGkuYXBpLlRoaXPbCe2mzFpAXAIAAHhxAH4BDHNxAH4A/3QAA0FueXNxAH4BA3NxAH4BBnVxAH4BCQAAAAJzcQB+AQt0AAVzY2FsYXEAfgESc3EAfgDUcQB+AOF1cQB+AOIAAAAAc3EAfgDkAHEAfgCZdXEAfgDmAAAAAH5xAH4A6HQABk1vZHVsZXVxAH4A7AAAAABzcQB+AO5xAH4A9HNxAH4A7nNxAH4A9nNxAH4A7nVxAH4A0gAAAAFzcgANeHNidGkuYXBpLkRlZlK+n+J8tDZpAgACTAAKcmV0dXJuVHlwZXQAEEx4c2J0aS9hcGkvVHlwZTtbAA92YWx1ZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9QYXJhbWV0ZXJMaXN0O3hxAH4A2HEAfgDhdXEAfgDiAAAAAHNxAH4A5ABxAH4AY3VxAH4A5gAAAABzcQB+AP90AARVbml0c3EAfgEDc3EAfgEGdXEAfgEJAAAAAnNxAH4BC3EAfgEZcQB+ARJ1cgAaW0x4c2J0aS5hcGkuUGFyYW1ldGVyTGlzdDv10zod8rNw7gIAAHhwAAAAAXNyABd4c2J0aS5hcGkuUGFyYW1ldGVyTGlzdNbFvBxkSXTjAgACWgAKaXNJbXBsaWNpdFsACnBhcmFtZXRlcnN0ABxbTHhzYnRpL2FwaS9NZXRob2RQYXJhbWV0ZXI7eHAAdXIAHFtMeHNidGkuYXBpLk1ldGhvZFBhcmFtZXRlcjvPuMVdpd21bQIAAHhwAAAAAXNyABl4c2J0aS5hcGkuTWV0aG9kUGFyYW1ldGVyH0WuF9NJsOoCAARaAApoYXNEZWZhdWx0TAAIbW9kaWZpZXJ0AB1MeHNidGkvYXBpL1BhcmFtZXRlck1vZGlmaWVyO0wABG5hbWVxAH4ADUwAA3RwZXEAfgEneHAAfnIAG3hzYnRpLmFwaS5QYXJhbWV0ZXJNb2RpZmllcgAAAAAAAAAAEgAAeHEAfgDpdAAFUGxhaW50AARhcmdzc3IAF3hzYnRpLmFwaS5QYXJhbWV0ZXJpemVkFmzuaQPJu38CAAJMAAhiYXNlVHlwZXEAfgEAWwANdHlwZUFyZ3VtZW50c3QAEVtMeHNidGkvYXBpL1R5cGU7eHEAfgDyc3EAfgD/dAAFQXJyYXlxAH4BL3VxAH4A/QAAAAFzcQB+AP90AAZTdHJpbmdzcQB+AQNzcQB+AQZ1cQB+AQkAAAADc3EAfgELcQB+AQ5zcQB+AQtxAH4BEHEAfgESc3EAfgDudXEAfgDSAAAAAHNxAH4A7nVxAH4A/QAAAANzcQB+AP90AAxDb25maWdQYXJzZXJzcQB+AQNzcQB+AQZ1cQB+AQkAAAABcQB+ARJzcQB+AP9xAH4BAnEAfgFJc3EAfgD/cQB+ARRxAH4BL3NxAH4A1HEAfgDhdXEAfgDiAAAAAHNxAH4A5ABxAH4AuXVxAH4A5gAAAAB+cQB+AOh0AAhDbGFzc0RlZnVxAH4A7AAAAABzcQB+AO5xAH4A9HNxAH4A7nNxAH4A9nNxAH4A7nVxAH4A0gAAAABzcQB+AO51cQB+ANIAAAAAc3EAfgDudXEAfgD9AAAABnNxAH4A/3QADFNlcmlhbGl6YWJsZXNxAH4BA3NxAH4BBnVxAH4BCQAAAAJzcQB+AQtxAH4BGXEAfgESc3EAfgD/cQB+AWpzcQB+AQNzcQB+AQZ1cQB+AQkAAAADc3EAfgELcQB+AQ5zcQB+AQt0AAJpb3EAfgESc3EAfgD/dAAHUHJvZHVjdHEAfgFrc3EAfgD/dAAGRXF1YWxzcQB+AWtzcQB+AP9xAH4BAnNxAH4BA3NxAH4BBnVxAH4BCQAAAANzcQB+AQtxAH4BDnNxAH4BC3EAfgEQcQB+ARJzcQB+AP9xAH4BFHEAfgFrc3EAfgDUcQB+AOF1cQB+AOIAAAAAc3EAfgDkAHEAfgCPdXEAfgDmAAAAAHEAfgFddXEAfgDsAAAAAHNxAH4A7nEAfgD0c3EAfgDuc3EAfgD2c3EAfgDudXEAfgDSAAAAAHNxAH4A7nVxAH4A0gAAAABzcQB+AO51cQB+AP0AAAACc3EAfgD/cQB+AQJzcQB+AQNzcQB+AQZ1cQB+AQkAAAADc3EAfgELcQB+AQ5zcQB+AQtxAH4BEHEAfgESc3EAfgD/cQB+ARRzcQB+AQNzcQB+AQZ1cQB+AQkAAAACc3EAfgELcQB+ARlxAH4BEnVyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAAAc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFc7cOi03VyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4ADUwAD3NvdXJjZURpcmVjdG9yeXEAfgANeHB0AGQvVXNlcnMvYXJ0aHVybGluL0RvY3VtZW50cy9HaXRIdWIvU2NhbGEtUHJhY3RpY2Uvd29ya3NwYWNlL1MzUGFydGl0aW9uVGVzdC90YXJnZXQvc2NhbGEtMi4xMS9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUa8hyKcWJ6xSwuOrX+m1QYLurjXQ=
+external apis:
+0 items
+source infos:
+1 items
+/Users/arthurlin/Documents/GitHub/Scala-Practice/workspace/S3PartitionTest/src/main/scala/Partition.scala -> 
+AAAAAAAAAAA=
+compilations:
+7 items
+0 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXOzEOxp1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAZC9Vc2Vycy9hcnRodXJsaW4vRG9jdW1lbnRzL0dpdEh1Yi9TY2FsYS1QcmFjdGljZS93b3Jrc3BhY2UvUzNQYXJ0aXRpb25UZXN0L3RhcmdldC9zY2FsYS0yLjExL2NsYXNzZXN0AAEv
+1 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXOzHn6F1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAZC9Vc2Vycy9hcnRodXJsaW4vRG9jdW1lbnRzL0dpdEh1Yi9TY2FsYS1QcmFjdGljZS93b3Jrc3BhY2UvUzNQYXJ0aXRpb25UZXN0L3RhcmdldC9zY2FsYS0yLjExL2NsYXNzZXN0AAEv
+2 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXO2coMh1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAZC9Vc2Vycy9hcnRodXJsaW4vRG9jdW1lbnRzL0dpdEh1Yi9TY2FsYS1QcmFjdGljZS93b3Jrc3BhY2UvUzNQYXJ0aXRpb25UZXN0L3RhcmdldC9zY2FsYS0yLjExL2NsYXNzZXN0AAEv
+3 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXO2gjtl1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAZC9Vc2Vycy9hcnRodXJsaW4vRG9jdW1lbnRzL0dpdEh1Yi9TY2FsYS1QcmFjdGljZS93b3Jrc3BhY2UvUzNQYXJ0aXRpb25UZXN0L3RhcmdldC9zY2FsYS0yLjExL2NsYXNzZXN0AAEv
+4 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXO2iGTt1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAZC9Vc2Vycy9hcnRodXJsaW4vRG9jdW1lbnRzL0dpdEh1Yi9TY2FsYS1QcmFjdGljZS93b3Jrc3BhY2UvUzNQYXJ0aXRpb25UZXN0L3RhcmdldC9zY2FsYS0yLjExL2NsYXNzZXN0AAEv
+5 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXO24Q7x1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAZC9Vc2Vycy9hcnRodXJsaW4vRG9jdW1lbnRzL0dpdEh1Yi9TY2FsYS1QcmFjdGljZS93b3Jrc3BhY2UvUzNQYXJ0aXRpb25UZXN0L3RhcmdldC9zY2FsYS0yLjExL2NsYXNzZXN0AAEv
+6 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABXO3DotN1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAZC9Vc2Vycy9hcnRodXJsaW4vRG9jdW1lbnRzL0dpdEh1Yi9TY2FsYS1QcmFjdGljZS93b3Jrc3BhY2UvUzNQYXJ0aXRpb25UZXN0L3RhcmdldC9zY2FsYS0yLjExL2NsYXNzZXN0AAEv

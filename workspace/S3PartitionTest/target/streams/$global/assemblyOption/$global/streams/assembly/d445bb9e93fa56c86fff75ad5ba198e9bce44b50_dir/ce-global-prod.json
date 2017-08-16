@@ -1,0 +1,25 @@
+{
+  "aws" : {
+    "cn": {
+      "accessKeyId" : "",
+      "secretAccessKey" : ""
+    }
+  },
+  "mysql" : {
+    "host": "127.0.0.1",
+    "database" : "ce",
+    "account" : "root",
+    "password" : "1234"
+  },
+  "s3" : {
+    "veryRawLogBucket": "ce-production-raw-event-logs"
+  },
+  "cloudwatch" : {
+    "namespaces" : {
+	"adreq": ""
+    },
+    "endpoint" : {
+      "realtime-scala": ""
+    }
+  }
+}
