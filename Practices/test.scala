@@ -29,5 +29,4 @@ object HelloWorld {
   def default_value(value: Int = 1) = {
     println(value)
   }
-
 }
